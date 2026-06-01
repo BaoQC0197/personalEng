@@ -226,6 +226,16 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 14) — PWA: cài ra màn hình chính
+- Em xác nhận tốc độ đã ổn (non-blocking). Thêm **PWA** để cài web ra màn hình
+  chính như app: `app/manifest.ts` (display standalone, theme #1c57f5),
+  icon động bằng `next/og` (`src/lib/appIcon.tsx` → routes `/icon-192.png`,
+  `/icon-512.png`, `/apple-icon.png`, gradient xanh + chữ "ME"), metadata
+  `manifest`/`appleWebApp`/`icons` + `viewport.themeColor` trong layout.
+- Đã verify trên prod: manifest `application/manifest+json` đúng; 3 icon trả
+  `image/png`. Cài: iOS Safari = Share → Add to Home Screen; Android Chrome =
+  menu ⋮ → Add to Home screen / Install app.
+
 ### 2026-06-01 (buổi 13) — GĐ3 deploy Vercel + gỡ lag production
 - **Deploy xong:** git init → push GitHub (BaoQC0197/personalEng) → Vercel import
   + 2 env → live tại **https://personal-eng.vercel.app**. (gh CLI chưa cài; push
