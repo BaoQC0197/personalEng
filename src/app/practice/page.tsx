@@ -1,7 +1,7 @@
 import { getAllPhrases, getTopics } from "@/lib/content";
 import PracticeSession from "@/components/PracticeSession";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function PracticePage() {
   const [phrases, topics] = await Promise.all([getAllPhrases(), getTopics()]);

@@ -38,16 +38,42 @@
 
 ---
 
-## Giai đoạn 2 — Nối app vào Supabase  *(thầy đang code)*
-App sẽ đọc nội dung và ghi tiến độ / sổ tay / thói quen qua Supabase. Có fallback
-về file/localStorage khi chưa cấu hình env, nên local không bao giờ vỡ.
+## Giai đoạn 2 — Nối app vào Supabase  ✅ XONG
+App đọc nội dung + ghi tiến độ / sổ tay / thói quen / xóa câu qua Supabase. Có
+fallback về file/localStorage khi chưa cấu hình env, nên local không bao giờ vỡ.
 
-## Giai đoạn 3 — Deploy Vercel  *(làm sau cùng)*
-1. Đưa code lên GitHub (thầy sẽ hướng dẫn `git init` → push).
-2. https://vercel.com → **Add New Project** → import repo từ GitHub.
-3. Mục **Environment Variables**, thêm `SUPABASE_URL` và `SUPABASE_SERVICE_ROLE_KEY`
-   (đúng giá trị như `.env.local`).
-4. **Deploy** → nhận link `*.vercel.app`. Mở trên điện thoại là học được mọi nơi.
+## Giai đoạn 3 — Deploy Vercel
+
+### B1. Tạo repo GitHub (trống)
+1. Vào https://github.com/new
+2. Repository name: vd `my-english`. Để **Private** (riêng tư) cũng được.
+3. ⚠️ KHÔNG tích "Add a README / .gitignore / license" (để repo trống, tránh đụng).
+4. **Create repository** → copy URL dạng `https://github.com/<user>/my-english.git`.
+
+### B2. Đẩy code lên (chạy trong terminal dự án)
+```powershell
+git remote add origin https://github.com/<user>/my-english.git
+git push -u origin main
+```
+Lần đầu push, một cửa sổ đăng nhập GitHub sẽ hiện ra — đăng nhập là xong.
+
+### B3. Import vào Vercel
+1. https://vercel.com → đăng nhập bằng GitHub → **Add New… → Project**.
+2. Chọn repo `my-english` → **Import**.
+3. Framework tự nhận **Next.js**, để mặc định.
+
+### B4. Thêm Environment Variables (QUAN TRỌNG)
+Trong màn hình import, mở **Environment Variables**, thêm 2 biến (y hệt `.env.local`):
+| Name | Value |
+|---|---|
+| `SUPABASE_URL` | https://erfqhktufwgsjchhfvtz.supabase.co |
+| `SUPABASE_SERVICE_ROLE_KEY` | (secret key `sb_secret_...`) |
+
+### B5. Deploy
+Bấm **Deploy** → đợi ~1–2 phút → nhận link `*.vercel.app`. Mở trên điện thoại,
+đăng nhập không cần, học mọi lúc — tiến độ đồng bộ chung với máy tính (cùng Supabase).
+
+> Sau này sửa code: chỉ cần `git push`, Vercel tự build & deploy lại.
 
 ---
 

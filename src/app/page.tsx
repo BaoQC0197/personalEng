@@ -2,7 +2,9 @@ import Link from "next/link";
 import { getTopics, getAllPhrases } from "@/lib/content";
 import TopicGrid from "@/components/TopicGrid";
 
-export const dynamic = "force-dynamic";
+// ISR: cache HTML, tự làm mới mỗi 5 phút (nội dung ít đổi). Tiến độ học load
+// riêng phía client nên vẫn luôn mới.
+export const revalidate = 300;
 
 export default async function HomePage() {
   const topics = await getTopics();

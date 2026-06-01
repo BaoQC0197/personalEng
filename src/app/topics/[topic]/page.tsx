@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTopic, getTopics, getPhrasesByTopic } from "@/lib/content";
 import TopicLearn from "@/components/TopicLearn";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 // Tạo sẵn route cho từng chủ đề (đọc danh sách chủ đề từ nguồn dữ liệu).
 export async function generateStaticParams() {
