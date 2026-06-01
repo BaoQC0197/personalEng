@@ -10,6 +10,7 @@ import {
 } from "@/lib/progressDb";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 30;
 
 export async function GET() {
   if (!isSupabaseConfigured) {

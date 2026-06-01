@@ -23,12 +23,29 @@ export const isSupabaseConfigured = Boolean(url && serviceKey);
 
 let client: SupabaseClient | null = null;
 
+// Kết nối Vercel -> Supabase (IPv6) hay chập chờn: lúc được, lúc "fetch failed".
+// Bọc fetch với RETRY để mọi lệnh (đọc/ghi) ổn định hơn nhiều.
+const fetchWithRetry: typeof fetch = async (input, init) => {
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      return await fetch(input as RequestInfo, init);
+    } catch (e) {
+      lastErr = e;
+      // nghỉ ngắn rồi thử lại (50ms, 150ms, 350ms)
+      await new Promise((r) => setTimeout(r, 50 + attempt * 100));
+    }
+  }
+  throw lastErr;
+};
+
 /** Lấy client Supabase (null nếu chưa cấu hình env). */
 export function getSupabase(): SupabaseClient | null {
   if (!isSupabaseConfigured) return null;
   if (!client) {
     client = createClient(url as string, serviceKey as string, {
       auth: { persistSession: false },
+      global: { fetch: fetchWithRetry },
     });
   }
   return client;

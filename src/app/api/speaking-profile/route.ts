@@ -9,6 +9,7 @@ import {
 
 // Luôn chạy động (đọc/ghi file), không cache.
 export const dynamic = "force-dynamic";
+export const maxDuration = 30;
 
 export async function GET() {
   const profile = await readSpeakingProfile();

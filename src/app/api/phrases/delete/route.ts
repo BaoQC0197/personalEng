@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import { deletePhrase } from "@/lib/phraseAdmin";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 30;
 
 export async function POST(request: Request) {
   try {
