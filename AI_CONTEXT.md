@@ -226,6 +226,17 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 18) — Làm nhanh TẤT CẢ trang menu (né 7s Supabase)
+- Gốc vẫn là 7s do IPv6 Vercel↔Supabase (hạ tầng, không sửa code được) → chiến
+  lược: cache + không-chờ-dữ-liệu ở mọi trang.
+- **/manage**: `force-dynamic` → `revalidate=60` (ISR, dựng sẵn, nhanh; xóa câu
+  cập nhật ngay ở client + DB, cache làm mới sau ≤60s).
+- **/habits** (SpeakingHabitsForm): hiện form NGAY, nạp hồ sơ ngầm (dùng `touched`
+  để không ghi đè khi em đang gõ).
+- **/notes** (VocabNotes): thêm ghi chú **optimistic** (hiện ngay, đồng bộ nền);
+  cho thêm liên tục không chờ; lúc nạp danh sách thì gộp giữ ghi chú vừa thêm.
+- Home/practice/learned đã ISR sẵn (pre-render lúc build → nhanh).
+
 ### 2026-06-01 (buổi 17) — Đồng bộ voice vào Luyện nhớ + tối ưu mobile quiz
 - **Voice vào Luyện nhớ:** PracticeSession **tự đọc câu Anh khi lật thẻ** (giọng
   đã ghim), đồng bộ với quiz. (Đã có sẵn nút 🔊 + VoicePicker trên trang.)

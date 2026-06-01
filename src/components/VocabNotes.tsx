@@ -11,17 +11,21 @@ export default function VocabNotes() {
   const [loading, setLoading] = useState(true);
   const [term, setTerm] = useState("");
   const [note, setNote] = useState("");
-  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     let alive = true;
     fetch("/api/notes")
       .then((r) => r.json())
       .then((list: VocabNote[]) => {
-        if (alive) {
-          setNotes(Array.isArray(list) ? list : []);
-          setLoading(false);
-        }
+        if (!alive) return;
+        const server = Array.isArray(list) ? list : [];
+        // Gộp: giữ lại ghi chú em vừa thêm trong lúc đang nạp (không bị mất).
+        setNotes((prev) => {
+          const ids = new Set(server.map((n) => n.id));
+          const localExtra = prev.filter((n) => !ids.has(n.id));
+          return [...localExtra, ...server];
+        });
+        setLoading(false);
       })
       .catch(() => alive && setLoading(false));
     return () => {
@@ -32,23 +36,30 @@ export default function VocabNotes() {
   async function add(e: React.FormEvent) {
     e.preventDefault();
     const t = term.trim();
-    if (!t || saving) return;
-    setSaving(true);
+    if (!t) return;
+    // Hiện ngay (optimistic), không bắt em chờ API.
+    const tempId = "temp-" + Date.now() + "-" + Math.round(performance.now());
+    const optimistic: VocabNote = {
+      id: tempId,
+      term: t,
+      note: note.trim() || undefined,
+      createdAt: new Date().toISOString(),
+    };
+    setNotes((prev) => [optimistic, ...prev]);
+    setTerm("");
+    setNote("");
     try {
       const res = await fetch("/api/notes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ term: t, note }),
+        body: JSON.stringify({ term: t, note: optimistic.note ?? "" }),
       });
       if (!res.ok) throw new Error();
       const entry: VocabNote = await res.json();
-      setNotes((prev) => [entry, ...prev]);
-      setTerm("");
-      setNote("");
+      setNotes((prev) => prev.map((n) => (n.id === tempId ? entry : n)));
     } catch {
-      window.alert("Lưu lỗi — kiểm tra server (npm run dev) còn chạy không.");
-    } finally {
-      setSaving(false);
+      setNotes((prev) => prev.filter((n) => n.id !== tempId));
+      window.alert("Lưu lỗi — kiểm tra mạng rồi thử lại nhé.");
     }
   }
 
@@ -86,10 +97,10 @@ export default function VocabNotes() {
         />
         <button
           type="submit"
-          disabled={saving || !term.trim()}
+          disabled={!term.trim()}
           className="mt-2 w-full rounded-xl bg-brand-600 py-2.5 font-semibold text-white transition hover:bg-brand-700 disabled:opacity-50 sm:w-auto sm:px-6"
         >
-          {saving ? "Đang lưu…" : "➕ Thêm vào sổ tay"}
+          ➕ Thêm vào sổ tay
         </button>
       </form>
 

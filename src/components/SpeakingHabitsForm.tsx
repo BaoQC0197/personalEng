@@ -5,7 +5,7 @@
 // Khi đầy, em báo thầy "generate" -> thầy đọc file này dựng câu tiếng Anh
 // đúng giọng của em (active recall sẽ bật ra tự nhiên vì là lời của chính em).
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { SpeakingProfile } from "@/lib/types";
 
 type Field = {
@@ -62,32 +62,37 @@ type Status = "loading" | "idle" | "saving" | "saved" | "error";
 
 export default function SpeakingHabitsForm() {
   const [form, setForm] = useState(EMPTY);
-  const [status, setStatus] = useState<Status>("loading");
+  const [status, setStatus] = useState<Status>("idle");
   const [updatedAt, setUpdatedAt] = useState("");
+  const [loading, setLoading] = useState(true); // nạp hồ sơ ngầm
+  const touched = useRef(false); // em đã gõ chưa (để không ghi đè lúc nạp xong)
 
-  // Tải hồ sơ đã lưu khi mở trang.
+  // Nạp hồ sơ NGẦM — không chặn form. Nếu em chưa gõ gì thì điền dữ liệu vào.
   useEffect(() => {
     let alive = true;
     fetch("/api/speaking-profile")
       .then((r) => r.json())
       .then((p: SpeakingProfile) => {
         if (!alive) return;
-        setForm({
-          fillers: p.fillers ?? "",
-          dailyLines: p.dailyLines ?? "",
-          personality: p.personality ?? "",
-          stuckSituations: p.stuckSituations ?? "",
-        });
-        setUpdatedAt(p.updatedAt ?? "");
-        setStatus("idle");
+        if (!touched.current) {
+          setForm({
+            fillers: p.fillers ?? "",
+            dailyLines: p.dailyLines ?? "",
+            personality: p.personality ?? "",
+            stuckSituations: p.stuckSituations ?? "",
+          });
+          setUpdatedAt(p.updatedAt ?? "");
+        }
+        setLoading(false);
       })
-      .catch(() => alive && setStatus("error"));
+      .catch(() => alive && setLoading(false));
     return () => {
       alive = false;
     };
   }, []);
 
   function update(key: keyof typeof EMPTY, value: string) {
+    touched.current = true;
     setForm((f) => ({ ...f, [key]: value }));
     if (status === "saved") setStatus("idle");
   }
@@ -109,12 +114,11 @@ export default function SpeakingHabitsForm() {
     }
   }
 
-  if (status === "loading") {
-    return <p className="text-sm text-slate-400">Đang tải hồ sơ…</p>;
-  }
-
   return (
     <div className="space-y-5">
+      {loading && (
+        <p className="text-xs text-slate-400">Đang nạp hồ sơ đã lưu…</p>
+      )}
       {FIELDS.map((f) => (
         <div key={f.key}>
           <label

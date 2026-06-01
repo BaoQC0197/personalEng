@@ -1,8 +1,8 @@
 import { getAllPhrases, getTopics } from "@/lib/content";
 import PhraseManager from "@/components/PhraseManager";
 
-// Trang luôn động để đọc dữ liệu câu mới nhất sau khi xóa.
-export const dynamic = "force-dynamic";
+// ISR: dựng sẵn + làm mới mỗi 60s (xóa câu cập nhật ngay ở client, DB đã đổi).
+export const revalidate = 60;
 
 export default async function ManagePage() {
   const [phrases, topics] = await Promise.all([getAllPhrases(), getTopics()]);
