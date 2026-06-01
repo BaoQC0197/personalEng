@@ -35,8 +35,15 @@ export async function POST(request: Request) {
     return NextResponse.json(entry);
   } catch (e) {
     const detail = e instanceof Error ? e.message : String(e);
+    const cause = (e as { cause?: unknown })?.cause;
+    const causeStr =
+      cause instanceof Error
+        ? `${cause.name}: ${cause.message} ${(cause as { code?: string }).code ?? ""}`
+        : cause
+        ? JSON.stringify(cause)
+        : "";
     return NextResponse.json(
-      { error: "Không thêm được.", detail },
+      { error: "Không thêm được.", detail, cause: causeStr },
       { status: 400 }
     );
   }
