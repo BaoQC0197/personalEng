@@ -1,8 +1,9 @@
 "use client";
 
-// Hook quản lý tiến độ học. Hai chế độ, tự chọn khi tải:
+// Hook quản lý tiến độ học — KHÔNG chặn giao diện.
+// UI hiện ngay (ready=true), tiến độ "đã thuộc/sao" tải NGẦM rồi cập nhật sau.
 //  - Có Supabase  -> đọc/ghi qua /api/progress (đồng bộ mọi thiết bị).
-//  - Chưa cấu hình -> localStorage như cũ (theo thiết bị).
+//  - Chưa cấu hình -> localStorage (theo thiết bị).
 // Giao diện trả về giữ nguyên để các component không phải sửa.
 
 import { useCallback, useEffect, useState } from "react";
@@ -17,10 +18,11 @@ import {
 
 export function useProgress() {
   const [progress, setProgress] = useState<ProgressMap>({});
-  const [ready, setReady] = useState(false);
-  const [useDb, setUseDb] = useState(false);
+  // ready=true ngay -> không chặn render. Tiến độ về sau sẽ tự cập nhật.
+  const [ready, setReady] = useState(true);
+  // Mặc định coi như dùng DB (production). GET sẽ xác nhận lại.
+  const [useDb, setUseDb] = useState(true);
 
-  // Tải lần đầu: hỏi server xem dùng DB hay localStorage.
   useEffect(() => {
     let alive = true;
     fetch("/api/progress")
@@ -34,13 +36,11 @@ export function useProgress() {
           setUseDb(false);
           setProgress(loadProgress());
         }
-        setReady(true);
       })
       .catch(() => {
         if (!alive) return;
         setUseDb(false);
         setProgress(loadProgress());
-        setReady(true);
       });
 
     // Đồng bộ nhiều tab (chỉ có ý nghĩa ở chế độ localStorage).
