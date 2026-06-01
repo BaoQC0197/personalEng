@@ -226,6 +226,15 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 22) — Generate +50 câu/chủ đề → mỗi chủ đề 100 câu (tổng 600)
+- Em yêu cầu thêm 50 câu thông dụng/dễ dùng mỗi chủ đề, không trùng kể cả nghĩa,
+  gắn công việc/đời sống; chạy liền không hỏi.
+- Đã thêm: qa 051→100, col 051→100, soc 051→100, mail 051→100, conn 051→100,
+  clar 051→100. **Tổng 6×100 = 600 câu.**
+- Kiểm 3 vòng: 0 JSON lỗi, 0 ID trùng, highlight khớp hết, 0 trùng EN/VI (đã sửa
+  qa-075 vốn trùng qa-048). Đẩy lên Supabase prod bằng `npm run db:seed` (600 OK).
+- (Em sẽ tự lọc bớt câu không hợp ở /manage sau.)
+
 ### 2026-06-01 (buổi 21) — BUG GỐC: SUPABASE_URL trên Vercel gõ sai `.com`
 - Lỗi "thêm sổ tay không thành công" → đào sâu: API trả "fetch failed" (không
   cause) ở MỌI lệnh ghi Supabase trên Vercel, dù host là Cloudflare IPv4 (tới
