@@ -16,7 +16,29 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
 export async function GET() {
-  return NextResponse.json(await readNotes());
+  // Chẩn đoán tạm: lộ URL (không bí mật) + thử fetch thô tới Supabase & internet.
+  const u = process.env.SUPABASE_URL ?? "";
+  const diag: Record<string, unknown> = {
+    urlJSON: JSON.stringify(u),
+    urlLen: u.length,
+    hasKey: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
+  };
+  try {
+    const r = await fetch("https://example.com", { cache: "no-store" });
+    diag.internet = r.status;
+  } catch (e) {
+    diag.internet = "FAIL: " + (e instanceof Error ? e.message : String(e));
+  }
+  try {
+    const r = await fetch(u.trim() + "/rest/v1/", {
+      headers: { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "" },
+      cache: "no-store",
+    });
+    diag.supabase = r.status;
+  } catch (e) {
+    diag.supabase = "FAIL: " + (e instanceof Error ? e.message : String(e));
+  }
+  return NextResponse.json({ notes: await readNotes(), diag });
 }
 
 export async function POST(request: Request) {
