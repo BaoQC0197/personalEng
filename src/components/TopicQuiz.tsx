@@ -12,6 +12,8 @@ import { useEffect, useMemo, useState } from "react";
 import type { Phrase } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
 import { speak } from "@/lib/speech";
+import { recognitionSupported } from "@/lib/speechRecognition";
+import SpeakCheck from "./SpeakCheck";
 
 interface TopicQuizProps {
   phrases: Phrase[];
@@ -48,6 +50,29 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
   const [cleared, setCleared] = useState<Set<string>>(new Set());
   const [wrongOnce, setWrongOnce] = useState<Set<string>>(new Set());
   const [picked, setPicked] = useState<string | null>(null);
+
+  // Chế độ bắt buộc luyện nói (ghim theo thiết bị). spoken = đã đạt/skip thẻ này.
+  const [speakMode, setSpeakMode] = useState(false);
+  const [spoken, setSpoken] = useState(false);
+  useEffect(() => {
+    try {
+      setSpeakMode(localStorage.getItem("pe:speakmode") === "1");
+    } catch {
+      /* bỏ qua */
+    }
+  }, []);
+  const recoSupported = recognitionSupported();
+  function toggleSpeakMode() {
+    setSpeakMode((v) => {
+      const nv = !v;
+      try {
+        localStorage.setItem("pe:speakmode", nv ? "1" : "0");
+      } catch {
+        /* bỏ qua */
+      }
+      return nv;
+    });
+  }
 
   // Dựng session khi tiến độ đã nạp xong / khi bấm "Học lại".
   // Chỉ lấy những câu CHƯA thuộc, random thứ tự.
@@ -161,7 +186,10 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
       setQueue((q) => (q ? [...q.slice(1), q[0]] : q));
     }
     setPicked(null);
+    setSpoken(false);
   }
+
+  const mustSpeak = answered && speakMode && recoSupported && !spoken;
 
   return (
     <div>
@@ -173,11 +201,30 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
         </span>
         <span>Còn trong hàng: {queue.length}</span>
       </div>
-      <div className="mb-6 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+      <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-slate-100">
         <div
           className="h-full rounded-full bg-brand-500 transition-all duration-500"
           style={{ width: `${(doneCount / sessionTotal) * 100}%` }}
         />
+      </div>
+
+      {/* Bật/tắt bắt buộc luyện nói */}
+      <div className="mb-5 flex flex-wrap items-center gap-2 text-sm">
+        <button
+          onClick={toggleSpeakMode}
+          className={`rounded-lg border px-3 py-1.5 font-medium transition ${
+            speakMode
+              ? "border-violet-300 bg-violet-50 text-violet-700"
+              : "border-slate-200 bg-white text-slate-500 hover:bg-slate-50"
+          }`}
+        >
+          🎤 Bắt buộc luyện nói: {speakMode ? "BẬT" : "TẮT"}
+        </button>
+        {speakMode && !recoSupported && (
+          <span className="text-xs text-amber-600">
+            Thiết bị/trình duyệt này chưa hỗ trợ nhận diện giọng — bước nói sẽ bỏ qua.
+          </span>
+        )}
       </div>
 
       {/* Mặt thẻ: tiếng Việt + sao quan trọng */}
@@ -271,6 +318,15 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
             </p>
           )}
 
+          {/* Bước luyện nói (nếu bật & thiết bị hỗ trợ) */}
+          {speakMode && recoSupported && (
+            <SpeakCheck
+              key={current.id}
+              target={current.en}
+              onPass={() => setSpoken(true)}
+            />
+          )}
+
           <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
             <div className="flex flex-wrap gap-2">
               <button
@@ -294,12 +350,24 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
                 {starredNow ? "★ Quan trọng" : "☆ Quan trọng"}
               </button>
             </div>
-            <button
-              onClick={goNext}
-              className="w-full rounded-lg bg-brand-600 px-5 py-2.5 font-semibold text-white transition hover:bg-brand-700 sm:ml-auto sm:w-auto"
-            >
-              Tiếp tục →
-            </button>
+            <div className="sm:ml-auto sm:flex sm:items-center sm:gap-3">
+              {mustSpeak && (
+                <button
+                  onClick={goNext}
+                  className="text-xs text-slate-400 underline hover:text-slate-600"
+                >
+                  Bỏ qua
+                </button>
+              )}
+              <button
+                onClick={goNext}
+                disabled={mustSpeak}
+                title={mustSpeak ? "Đọc đạt ≥70% để qua câu tiếp" : undefined}
+                className="w-full rounded-lg bg-brand-600 px-5 py-2.5 font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+              >
+                Tiếp tục →
+              </button>
+            </div>
           </div>
         </div>
       )}

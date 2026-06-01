@@ -226,6 +226,15 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 16) — Luyện NÓI: ghi âm + chấm điểm, gate qua câu
+- Thêm chế độ "🎤 Bắt buộc luyện nói" (bật/tắt, ghim localStorage). Sau khi chọn
+  đáp án: em bấm mic đọc câu → `SpeechRecognition` nhận chữ → `scoreMatch` chấm
+  % từ nói trúng. ≥70% = đạt → mới mở khoá "Tiếp tục" (có nút "Bỏ qua" để không
+  kẹt cứng). `src/lib/speechRecognition.ts` + `SpeakCheck.tsx`, ghép vào TopicQuiz.
+- KHÔNG gây lag (chỉ chạy khi bấm mic). Hạn chế: tốt trên Chrome/Android, iOS
+  Safari chập chờn; cần mạng + quyền micro → mặc định TẮT, có cảnh báo khi thiết
+  bị không hỗ trợ.
+
 ### 2026-06-01 (buổi 15) — Chọn giọng đọc Nam/Nữ (luyện nghe)
 - Em hỏi vì sao lúc nam lúc nữ: do trước đây KHÔNG ghim giọng → trình duyệt tự
   chọn giọng mặc định (khác nhau theo máy/trình duyệt). Web Speech API chạy
