@@ -12,20 +12,16 @@ export default async function HomePage() {
 
   return (
     <div>
-      {/* Hero gọn — ưu tiên nội dung phía dưới */}
-      <section className="mb-6 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 p-5 text-white shadow-md sm:p-7">
-        <h1 className="text-xl font-extrabold leading-snug sm:text-2xl">
-          Học tiếng Anh cho thế giới của bạn 🌏
+      {/* Hero slim — gradient + CTA, chiều cao tối thiểu */}
+      <section className="mb-5 flex items-center justify-between gap-3 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 px-4 py-3 text-white shadow-md sm:px-6 sm:py-4">
+        <h1 className="text-base font-extrabold leading-tight sm:text-lg">
+          Học tiếng Anh cho<br className="sm:hidden" /> thế giới của bạn 🌏
         </h1>
-        <p className="mt-1.5 hidden text-sm text-brand-100 sm:block">
-          Chỉ học cụm từ & câu xoay quanh cuộc sống của bạn — không nhồi thứ cả
-          đời không dùng.
-        </p>
         <Link
           href="/practice"
-          className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-base font-bold text-brand-700 shadow transition hover:bg-brand-50 sm:w-auto"
+          className="shrink-0 rounded-xl bg-white px-4 py-2 text-sm font-bold text-brand-700 shadow transition hover:bg-brand-50"
         >
-          🎯 Luyện nhớ ngay
+          🎯 Luyện nhớ
         </Link>
       </section>
 

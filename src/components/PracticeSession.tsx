@@ -9,6 +9,8 @@ import Link from "next/link";
 import type { Phrase, Topic } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
 import { speak } from "@/lib/speech";
+import { recognitionSupported } from "@/lib/speechRecognition";
+import SpeakCheck from "./SpeakCheck";
 import Highlight from "./Highlight";
 
 interface PracticeSessionProps {
@@ -225,6 +227,11 @@ export default function PracticeSession({ phrases, topics }: PracticeSessionProp
             </div>
             {current.note && (
               <p className="mt-2 text-sm text-slate-500">💡 {current.note}</p>
+            )}
+
+            {/* Luyện nói (nếu thiết bị hỗ trợ) — chỉ là công cụ tập, không bắt buộc */}
+            {recognitionSupported() && (
+              <SpeakCheck key={current.id} target={current.en} onPass={() => {}} />
             )}
 
             {/* Tự chấm */}

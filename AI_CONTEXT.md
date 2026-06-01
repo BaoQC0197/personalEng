@@ -226,6 +226,16 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 20) — Hero slim, sổ tay nhanh, voice vào Luyện nhớ, xem câu đã thuộc/phần
+- **Hero** trang chủ thu thành thanh ngang slim (tiêu đề + nút), rất thấp.
+- **Sổ tay** hết chờ ~10s: `notes/page.tsx` đọc ghi chú **phía server (ISR
+  revalidate=30)** truyền vào `VocabNotes` (initialNotes) → hiện ngay; đồng bộ ngầm.
+- **Luyện nhớ** thêm **SpeakCheck (mic)** khi lật thẻ (nếu thiết bị hỗ trợ) →
+  có đủ voice: chọn giọng + tự đọc + nghe lại + luyện nói.
+- **TopicLearn**: mỗi phần có nút **"👁 Xem N"** → liệt kê đúng các câu ĐÃ THUỘC
+  của phần đó (PhraseCard) + nút trả về chưa thuộc. Thẻ phần đổi sang div, nút
+  "Học phần này" + "Xem N".
+
 ### 2026-06-01 (buổi 19) — Nâng cấp giao diện mobile tổng thể
 - Nguyên tắc em đưa: chữ to-rõ, "khung" (header/hero/footer) thấp gọn, ưu tiên
   nội dung & màu sắc, căn chỉnh nhất quán.

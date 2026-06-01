@@ -6,28 +6,33 @@
 import { useEffect, useState } from "react";
 import type { VocabNote } from "@/lib/types";
 
-export default function VocabNotes() {
-  const [notes, setNotes] = useState<VocabNote[]>([]);
-  const [loading, setLoading] = useState(true);
+export default function VocabNotes({
+  initialNotes = [],
+}: {
+  initialNotes?: VocabNote[];
+}) {
+  // Hiện NGAY danh sách dựng sẵn từ server (không chờ 10s).
+  const [notes, setNotes] = useState<VocabNote[]>(initialNotes);
+  const [loading] = useState(false);
   const [term, setTerm] = useState("");
   const [note, setNote] = useState("");
 
+  // Đồng bộ NGẦM phòng dữ liệu cache hơi cũ (không chặn, lỗi thì kệ).
   useEffect(() => {
     let alive = true;
     fetch("/api/notes")
       .then((r) => r.json())
       .then((list: VocabNote[]) => {
-        if (!alive) return;
-        const server = Array.isArray(list) ? list : [];
-        // Gộp: giữ lại ghi chú em vừa thêm trong lúc đang nạp (không bị mất).
+        if (!alive || !Array.isArray(list)) return;
         setNotes((prev) => {
-          const ids = new Set(server.map((n) => n.id));
-          const localExtra = prev.filter((n) => !ids.has(n.id));
-          return [...localExtra, ...server];
+          const ids = new Set(list.map((n) => n.id));
+          const localExtra = prev.filter(
+            (n) => !ids.has(n.id) && n.id.startsWith("temp-")
+          );
+          return [...localExtra, ...list];
         });
-        setLoading(false);
       })
-      .catch(() => alive && setLoading(false));
+      .catch(() => {});
     return () => {
       alive = false;
     };
