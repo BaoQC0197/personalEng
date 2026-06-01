@@ -226,6 +226,22 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 21) — BUG GỐC: SUPABASE_URL trên Vercel gõ sai `.com`
+- Lỗi "thêm sổ tay không thành công" → đào sâu: API trả "fetch failed" (không
+  cause) ở MỌI lệnh ghi Supabase trên Vercel, dù host là Cloudflare IPv4 (tới
+  được). Chẩn đoán bằng GET diag: `internet=200` nhưng `supabase=FAIL`, và
+  **`SUPABASE_URL` trên Vercel = `...supabase.com`** (thừa "m") thay vì
+  **`.supabase.co`**. → Domain sai → fetch failed.
+- Trang nội dung vẫn hiện do `content.ts` **fallback JSON**; tiến độ/sổ tay/
+  thói quen chết vì gọi thẳng Supabase. Local OK vì `.env.local` đúng `.co`.
+- **FIX: sửa env `SUPABASE_URL` trên Vercel → `.co` → Redeploy.** (Việc của em.)
+- Đồng thời dọn/cải thiện code (giữ lại): addNote chèn thẳng id (bỏ
+  `.select().single()` dễ lỗi RLS), genId dùng `globalThis.crypto` (bỏ import
+  "crypto"), maxDuration=30 cho route ghi, KHÔNG override global.fetch (ép undici
+  gây fail), bỏ ép region sin1.
+- **Bài học:** "fetch failed" + internet OK = nghi URL/env sai. Lộ
+  `JSON.stringify(process.env.X)` để bắt ký tự ẩn / sai chính tả domain.
+
 ### 2026-06-01 (buổi 20) — Hero slim, sổ tay nhanh, voice vào Luyện nhớ, xem câu đã thuộc/phần
 - **Hero** trang chủ thu thành thanh ngang slim (tiêu đề + nút), rất thấp.
 - **Sổ tay** hết chờ ~10s: `notes/page.tsx` đọc ghi chú **phía server (ISR

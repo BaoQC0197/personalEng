@@ -16,29 +16,7 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
 export async function GET() {
-  // Chẩn đoán tạm: lộ URL (không bí mật) + thử fetch thô tới Supabase & internet.
-  const u = process.env.SUPABASE_URL ?? "";
-  const diag: Record<string, unknown> = {
-    urlJSON: JSON.stringify(u),
-    urlLen: u.length,
-    hasKey: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
-  };
-  try {
-    const r = await fetch("https://example.com", { cache: "no-store" });
-    diag.internet = r.status;
-  } catch (e) {
-    diag.internet = "FAIL: " + (e instanceof Error ? e.message : String(e));
-  }
-  try {
-    const r = await fetch(u.trim() + "/rest/v1/", {
-      headers: { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "" },
-      cache: "no-store",
-    });
-    diag.supabase = r.status;
-  } catch (e) {
-    diag.supabase = "FAIL: " + (e instanceof Error ? e.message : String(e));
-  }
-  return NextResponse.json({ notes: await readNotes(), diag });
+  return NextResponse.json(await readNotes());
 }
 
 export async function POST(request: Request) {
@@ -55,19 +33,8 @@ export async function POST(request: Request) {
       new Date().toISOString()
     );
     return NextResponse.json(entry);
-  } catch (e) {
-    const detail = e instanceof Error ? e.message : String(e);
-    const cause = (e as { cause?: unknown })?.cause;
-    const causeStr =
-      cause instanceof Error
-        ? `${cause.name}: ${cause.message} ${(cause as { code?: string }).code ?? ""}`
-        : cause
-        ? JSON.stringify(cause)
-        : "";
-    return NextResponse.json(
-      { error: "Không thêm được.", detail, cause: causeStr },
-      { status: 400 }
-    );
+  } catch {
+    return NextResponse.json({ error: "Không thêm được." }, { status: 400 });
   }
 }
 
