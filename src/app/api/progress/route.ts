@@ -9,8 +9,6 @@ import {
   toggleStarDb,
 } from "@/lib/progressDb";
 
-// Edge runtime: cold start gần như bằng 0 (route này chỉ gọi Supabase qua fetch).
-export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 export async function GET() {

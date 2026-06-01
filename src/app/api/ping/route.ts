@@ -1,5 +1,4 @@
-// Route chẩn đoán: KHÔNG gọi gì cả, để đo cold-start thuần của Vercel.
-export const runtime = "edge";
+// Route chẩn đoán: KHÔNG gọi gì cả, để đo cold-start thuần của Vercel (Node).
 export const dynamic = "force-dynamic";
 
 export function GET() {
