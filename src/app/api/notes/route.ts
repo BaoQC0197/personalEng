@@ -3,8 +3,14 @@
 // POST   -> thêm ghi chú { term, note }.
 // DELETE -> xóa ghi chú theo ?id=...
 import { NextResponse } from "next/server";
-import { randomUUID } from "crypto";
 import { readNotes, addNote, removeNote } from "@/lib/vocabNotes";
+
+// id ngẫu nhiên không phụ thuộc import "crypto" (tránh lỗi bundle trên serverless).
+function genId(): string {
+  const g = (globalThis as { crypto?: { randomUUID?: () => string } }).crypto;
+  if (g?.randomUUID) return g.randomUUID();
+  return "n-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+}
 
 export const dynamic = "force-dynamic";
 
@@ -22,12 +28,16 @@ export async function POST(request: Request) {
     const entry = await addNote(
       term,
       String(body.note ?? ""),
-      randomUUID(),
+      genId(),
       new Date().toISOString()
     );
     return NextResponse.json(entry);
-  } catch {
-    return NextResponse.json({ error: "Không thêm được." }, { status: 400 });
+  } catch (e) {
+    const detail = e instanceof Error ? e.message : String(e);
+    return NextResponse.json(
+      { error: "Không thêm được.", detail },
+      { status: 400 }
+    );
   }
 }
 
