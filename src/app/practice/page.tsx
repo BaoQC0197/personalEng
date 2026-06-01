@@ -12,7 +12,7 @@ export default async function PracticePage() {
       <p className="mb-6 text-sm text-slate-500">
         Việt → Anh. Luyện “bật ra” để nói được, không chỉ hiểu.
       </p>
-      <div className="mb-5">
+      <div className="mb-3">
         <VoicePicker />
       </div>
       <PracticeSession phrases={phrases} topics={topics} />

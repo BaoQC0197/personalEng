@@ -4,7 +4,7 @@
 // người học tự bật ra tiếng Anh TRƯỚC, rồi lật thẻ kiểm tra.
 // Mục tiêu: chuyển vốn từ "bị động" (nhìn hiểu) -> "chủ động" (nói ra được).
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Phrase, Topic } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
@@ -57,6 +57,12 @@ export default function PracticeSession({ phrases, topics }: PracticeSessionProp
   };
 
   const current = deck[pos];
+
+  // Lật thẻ -> tự đọc câu tiếng Anh bằng giọng đã ghim (đồng bộ với chế độ quiz).
+  useEffect(() => {
+    if (revealed && current) speak(current.en);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [revealed]);
 
   const next = (gotIt: boolean) => {
     setReviewed((n) => n + 1);

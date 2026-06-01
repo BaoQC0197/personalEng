@@ -194,14 +194,13 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
   return (
     <div>
       {/* Tiến độ session */}
-      <div className="mb-2 flex items-center justify-between text-sm text-slate-500">
+      <div className="mb-1 flex items-center justify-between text-xs text-slate-500">
         <span>
-          Đã xong <b className="text-slate-700">{doneCount}</b>/{sessionTotal}{" "}
-          (câu chưa thuộc)
+          Đã xong <b className="text-slate-700">{doneCount}</b>/{sessionTotal}
         </span>
-        <span>Còn trong hàng: {queue.length}</span>
+        <span>Còn lại: {queue.length}</span>
       </div>
-      <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+      <div className="mb-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
         <div
           className="h-full rounded-full bg-brand-500 transition-all duration-500"
           style={{ width: `${(doneCount / sessionTotal) * 100}%` }}
@@ -209,7 +208,7 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
       </div>
 
       {/* Bật/tắt bắt buộc luyện nói */}
-      <div className="mb-5 flex flex-wrap items-center gap-2 text-sm">
+      <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
         <button
           onClick={toggleSpeakMode}
           className={`rounded-lg border px-3 py-1.5 font-medium transition ${
@@ -228,13 +227,13 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
       </div>
 
       {/* Mặt thẻ: tiếng Việt + sao quan trọng */}
-      <div className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="relative rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
         <button
           type="button"
           onClick={() => toggleStar(current.id)}
           title={starredNow ? "Bỏ đánh dấu quan trọng" : "Đánh dấu câu quan trọng"}
           aria-label="Đánh dấu câu quan trọng"
-          className="absolute right-4 top-4 text-2xl leading-none transition hover:scale-110"
+          className="absolute right-3 top-3 text-2xl leading-none transition hover:scale-110"
         >
           <span className={starredNow ? "text-amber-400" : "text-slate-300"}>
             {starredNow ? "★" : "☆"}
@@ -243,11 +242,13 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
         <p className="mb-1 text-xs font-medium uppercase tracking-wide text-slate-400">
           Chọn câu tiếng Anh đúng
         </p>
-        <p className="pr-8 text-xl font-semibold text-slate-800">{current.vi}</p>
+        <p className="pr-8 text-lg font-semibold text-slate-800 sm:text-xl">
+          {current.vi}
+        </p>
       </div>
 
       {/* 4 đáp án */}
-      <div className="mt-4 grid gap-3">
+      <div className="mt-3 grid gap-2 sm:gap-3">
         {options.map((o) => {
           let style =
             "border-slate-200 bg-white hover:border-brand-400 hover:bg-brand-50";

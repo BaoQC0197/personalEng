@@ -226,6 +226,15 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 17) — Đồng bộ voice vào Luyện nhớ + tối ưu mobile quiz
+- **Voice vào Luyện nhớ:** PracticeSession **tự đọc câu Anh khi lật thẻ** (giọng
+  đã ghim), đồng bộ với quiz. (Đã có sẵn nút 🔊 + VoicePicker trên trang.)
+- **Tối ưu mobile (ưu tiên thấy câu hỏi + đủ 4 đáp án không cần cuộn):**
+  - `VoicePicker` thành **thu gọn** (1 dòng, bấm mới mở) — tiết kiệm nhiều chỗ.
+  - Header trang chủ đề nhỏ hơn ở mobile, **ẩn mô tả** trên màn nhỏ.
+  - TopicQuiz: giảm margin thanh tiến độ/toggle, thẻ câu hỏi `p-4` ở mobile,
+    đáp án `gap-2`. Layout `py-5` ở mobile.
+
 ### 2026-06-01 (buổi 16b) — Tối ưu UX luyện nói
 - Em báo: bấm ~5-6 lần thì lỗi + nhận diện tệ với giọng Việt. Đổi cơ chế:
   `startRecognition` kiểu **bấm-nói → nói cả câu → bấm Dừng & chấm**
