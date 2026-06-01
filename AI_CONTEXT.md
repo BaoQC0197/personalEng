@@ -226,6 +226,26 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 13) — GĐ3 deploy Vercel + gỡ lag production
+- **Deploy xong:** git init → push GitHub (BaoQC0197/personalEng) → Vercel import
+  + 2 env → live tại **https://personal-eng.vercel.app**. (gh CLI chưa cài; push
+  HTTPS dùng credential sẵn của máy.)
+- **Tối ưu tốc độ:** đổi trang nội dung sang `revalidate=300` (ISR, cache CDN) +
+  `vercel.json` region `sin1` + `next.config` `eslint.ignoreDuringBuilds`.
+- **Bug lag nặng:** mọi API gọi Supabase mất **~7.4s** (trang tĩnh 0.5s, Supabase
+  trực tiếp 0.4s → 7s nằm TRONG function Vercel). Chẩn đoán bằng `/api/ping`:
+  Node trivial nhanh (~0.3s) ⇒ KHÔNG phải cold start; `fetch` thô tới Supabase
+  từ function **fail ngay 2ms** còn supabase-js đi được nhưng 7s ⇒ **vấn đề
+  kết nối IPv6/định tuyến Vercel↔Supabase**. Ép `dns.setDefaultResultOrder
+  ("ipv4first")` trong `supabase.ts` (chưa dứt 7s).
+- **Giải pháp chốt (nằm trong tầm kiểm soát):** `useProgress` **không chặn UI** —
+  `ready=true` ngay, tải tiến độ NGẦM. Nội dung cache CDN hiện tức thì; "đã
+  thuộc/sao" cập nhật sau ~vài giây. App dùng mượt dù sync nền còn chậm.
+- **CÒN TỒN (tuỳ chọn):** sync tiến độ nền vẫn ~7s do mạng. Cách dứt điểm: đặt
+  Vercel region = đúng region Supabase. Tìm region qua nút **Connect** trên
+  Supabase (host pooler dạng `aws-0-<region>.pooler.supabase.com`, vd
+  `ap-southeast-1`=sin1, `us-east-1`=iad1) → sửa `vercel.json`.
+
 ### 2026-06-01 (buổi 12) — GĐ1 seed + GĐ2 nối app vào Supabase (đã test thật)
 - Em đã tạo project + chạy schema + seed: **6 chủ đề, 300 câu** trên Supabase. Key
   Supabase đời mới: dùng **Secret key `sb_secret_...`** (thay service_role) +
