@@ -34,13 +34,17 @@ export default function SpeakCheck({
       if (sc >= PASS) onPass();
     } catch (e) {
       const code = e instanceof Error ? e.message : "error";
-      setErrMsg(
+      const msg =
         code === "not-allowed" || code === "service-not-allowed"
           ? "Chưa cấp quyền micro. Hãy cho phép dùng micro rồi thử lại."
           : code === "no-speech"
-          ? "Không nghe thấy gì. Nói to và rõ hơn nhé."
-          : "Không nhận diện được (thử lại hoặc bấm Bỏ qua)."
-      );
+          ? "Không nghe thấy gì. Bấm lại rồi nói to & rõ hơn nhé."
+          : code === "network"
+          ? "Cần kết nối mạng để nhận diện giọng. Kiểm tra mạng rồi thử lại."
+          : code === "aborted"
+          ? "Bị gián đoạn. Bấm lại để nói tiếp nhé."
+          : "Chưa nhận được. Bấm lại để thử, hoặc bấm Bỏ qua.";
+      setErrMsg(msg);
       setStatus("error");
     }
   }

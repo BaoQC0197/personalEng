@@ -12,6 +12,10 @@ export function recognitionSupported(): boolean {
   );
 }
 
+// Giữ tham chiếu phiên đang chạy để HỦY trước khi bắt đầu phiên mới
+// (tránh lỗi xung đột khi bấm "Nhấn để nói" lần 2).
+let active: any = null;
+
 /** Bật mic, nghe 1 câu, trả về chuỗi nhận diện được (hoặc reject nếu lỗi). */
 export function recognizeOnce(lang = "en-US"): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -22,33 +26,62 @@ export function recognizeOnce(lang = "en-US"): Promise<string> {
       reject(new Error("unsupported"));
       return;
     }
+
+    // Hủy phiên cũ còn sót (nếu có) để khỏi xung đột.
+    if (active) {
+      try {
+        active.abort();
+      } catch {
+        /* bỏ qua */
+      }
+      active = null;
+    }
+
     const rec = new SR();
+    active = rec;
     rec.lang = lang;
     rec.interimResults = false;
     rec.maxAlternatives = 1;
     let settled = false;
+    const clear = () => {
+      if (active === rec) active = null;
+    };
 
     rec.onresult = (e: any) => {
+      if (settled) return;
       settled = true;
       const transcript = e.results?.[0]?.[0]?.transcript ?? "";
+      try {
+        rec.stop(); // nhả mic ngay
+      } catch {
+        /* bỏ qua */
+      }
       resolve(String(transcript));
     };
     rec.onerror = (e: any) => {
       if (settled) return;
       settled = true;
+      clear();
       reject(new Error(e?.error || "error"));
     };
     rec.onend = () => {
+      clear();
       if (settled) return;
       settled = true;
       reject(new Error("no-speech"));
     };
 
-    try {
-      rec.start();
-    } catch {
-      reject(new Error("start-failed"));
-    }
+    // Bắt đầu ở lần tick sau để phiên cũ kịp hủy hẳn.
+    setTimeout(() => {
+      try {
+        rec.start();
+      } catch {
+        if (settled) return;
+        settled = true;
+        clear();
+        reject(new Error("start-failed"));
+      }
+    }, 80);
   });
 }
 
