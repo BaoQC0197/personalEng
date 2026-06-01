@@ -54,23 +54,24 @@ export function startRecognition(h: RecoHandlers): RecoController | null {
   rec.lang = h.lang ?? "en-US";
   rec.continuous = true;
   rec.interimResults = true;
-  rec.maxAlternatives = 3;
+  rec.maxAlternatives = 1;
 
-  const collected: string[] = [];
+  // QUAN TRỌNG: dựng lại transcript TỪ ĐẦU mỗi lần sự kiện bắn (e.results là
+  // danh sách tích luỹ sẵn) — KHÔNG dồn thêm, để tránh lặp chữ chồng chất.
+  let finalText = "";
   let hadError = false;
 
   rec.onresult = (e: any) => {
+    let finals = "";
     let interim = "";
-    for (let i = e.resultIndex; i < e.results.length; i++) {
+    for (let i = 0; i < e.results.length; i++) {
       const r = e.results[i];
-      if (r.isFinal) {
-        const n = Math.min(r.length, 3);
-        for (let a = 0; a < n; a++) collected.push(r[a].transcript);
-      } else {
-        interim += r[0].transcript;
-      }
+      const t = r[0]?.transcript ?? "";
+      if (r.isFinal) finals += t + " ";
+      else interim += t + " ";
     }
-    if (interim) h.onInterim?.(interim);
+    finalText = finals.trim();
+    h.onInterim?.((finalText + " " + interim).trim());
   };
   rec.onerror = (e: any) => {
     hadError = true;
@@ -78,7 +79,7 @@ export function startRecognition(h: RecoHandlers): RecoController | null {
   };
   rec.onend = () => {
     if (active === rec) active = null;
-    if (!hadError) h.onDone?.(collected.join(" "));
+    if (!hadError) h.onDone?.(finalText);
   };
 
   try {
