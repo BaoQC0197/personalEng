@@ -53,13 +53,17 @@ export async function addNote(
 ): Promise<VocabNote> {
   const sb = getSupabase();
   if (sb) {
-    const { data, error } = await sb
+    // Chèn thẳng với id tự tạo, KHÔNG .select() đọc lại (tránh lỗi do RLS).
+    const { error } = await sb
       .from("vocab_notes")
-      .insert({ term: term.trim(), note: note.trim() || null })
-      .select("*")
-      .single();
-    if (error || !data) throw new Error(error?.message ?? "insert failed");
-    return rowToNote(data);
+      .insert({ id, term: term.trim(), note: note.trim() || null, created_at: nowIso });
+    if (error) throw new Error(error.message);
+    return {
+      id,
+      term: term.trim(),
+      note: note.trim() || undefined,
+      createdAt: nowIso,
+    };
   }
   const list = await readNotes();
   const entry: VocabNote = {
