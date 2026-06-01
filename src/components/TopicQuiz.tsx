@@ -267,7 +267,7 @@ export default function TopicQuiz({ phrases }: TopicQuizProps) {
               type="button"
               disabled={answered}
               onClick={() => choose(o.en)}
-              className={`rounded-xl border px-4 py-3 text-left text-[15px] font-medium transition ${style}`}
+              className={`rounded-xl border px-4 py-3.5 text-left text-base font-medium leading-snug transition active:scale-[0.99] ${style}`}
             >
               {o.en}
               {answered && o.correct && <span className="ml-2">✓</span>}

@@ -32,9 +32,9 @@ export default function RootLayout({
     <html lang="vi">
       <body>
         <Header />
-        <main className="mx-auto max-w-4xl px-4 py-5 sm:py-8">{children}</main>
-        <footer className="border-t border-slate-200 py-8 text-center text-sm text-slate-400">
-          Bạn không học tiếng Anh cho cả thế giới — bạn học cho thế giới của bạn.
+        <main className="mx-auto max-w-3xl px-4 py-4 sm:py-8">{children}</main>
+        <footer className="px-4 pb-8 pt-2 text-center text-xs italic text-slate-400">
+          Bạn học tiếng Anh cho thế giới của bạn.
         </footer>
       </body>
     </html>

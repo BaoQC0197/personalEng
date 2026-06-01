@@ -31,15 +31,17 @@ export default function Header() {
     }`;
 
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
+    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/85 backdrop-blur">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-2.5">
         <Link
           href="/"
           onClick={() => setOpen(false)}
           className="flex items-center gap-2"
         >
-          <span className="text-2xl">📖</span>
-          <span className="text-lg font-bold text-slate-800">My English</span>
+          <span className="text-xl">📖</span>
+          <span className="text-lg font-extrabold tracking-tight text-slate-800">
+            My English
+          </span>
         </Link>
 
         {/* Nav ngang — desktop */}

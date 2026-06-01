@@ -8,9 +8,24 @@
 
 body {
   @apply bg-slate-50 text-slate-800 antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Cuộn mượt */
 html {
   scroll-behavior: smooth;
+}
+
+/* Mobile: ép ô nhập >=16px để iOS KHÔNG tự phóng to khi focus */
+@media (max-width: 640px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Nút bấm trên cảm ứng cần vùng chạm đủ rộng */
+button {
+  touch-action: manipulation;
 }

@@ -226,6 +226,17 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 19) — Nâng cấp giao diện mobile tổng thể
+- Nguyên tắc em đưa: chữ to-rõ, "khung" (header/hero/footer) thấp gọn, ưu tiên
+  nội dung & màu sắc, căn chỉnh nhất quán.
+- globals.css: ép ô nhập ≥16px trên mobile (chống iOS auto-zoom), tap-highlight
+  trong suốt, touch-action. Thu hẹp content về `max-w-3xl`.
+- Header py-2.5, logo extrabold. Footer thấp gọn (text-xs italic).
+- Home: hero gọn (p-5, ẩn mô tả dài trên mobile, CTA full-width to). Lưới chủ đề:
+  icon nền gradient màu + tiêu đề to, line-clamp mô tả để căn đều.
+- Quiz: đáp án `text-base` py-3.5 (to rõ, vùng chạm rộng). (Đã tối ưu chiều cao
+  phần phụ ở buổi 17.)
+
 ### 2026-06-01 (buổi 18) — Làm nhanh TẤT CẢ trang menu (né 7s Supabase)
 - Gốc vẫn là 7s do IPv6 Vercel↔Supabase (hạ tầng, không sửa code được) → chiến
   lược: cache + không-chờ-dữ-liệu ở mọi trang.
