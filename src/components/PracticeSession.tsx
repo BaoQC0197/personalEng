@@ -8,6 +8,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Phrase, Topic } from "@/lib/types";
 import { useProgress } from "@/lib/useProgress";
+import { speak } from "@/lib/speech";
 import Highlight from "./Highlight";
 
 interface PracticeSessionProps {
@@ -23,16 +24,6 @@ function shuffle<T>(arr: T[]): T[] {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
-}
-
-/** Đọc to câu tiếng Anh (nếu trình duyệt hỗ trợ). */
-function speak(text: string) {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = "en-US";
-  u.rate = 0.95;
-  window.speechSynthesis.speak(u);
 }
 
 export default function PracticeSession({ phrases, topics }: PracticeSessionProps) {

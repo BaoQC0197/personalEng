@@ -5,6 +5,7 @@
 
 import { useState } from "react";
 import type { Phrase } from "@/lib/types";
+import { speak } from "@/lib/speech";
 import Highlight from "./Highlight";
 
 interface PhraseCardProps {
@@ -15,16 +16,6 @@ interface PhraseCardProps {
   starred?: boolean;
   /** Đảo dấu sao quan trọng. Nếu không truyền thì ẩn nút sao. */
   onToggleStar?: (id: string) => void;
-}
-
-/** Đọc to câu tiếng Anh bằng Web Speech API (nếu trình duyệt hỗ trợ). */
-function speak(text: string) {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = "en-US";
-  utter.rate = 0.95;
-  window.speechSynthesis.speak(utter);
 }
 
 export default function PhraseCard({

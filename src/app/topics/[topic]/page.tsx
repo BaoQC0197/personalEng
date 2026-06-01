@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTopic, getTopics, getPhrasesByTopic } from "@/lib/content";
 import TopicLearn from "@/components/TopicLearn";
+import VoicePicker from "@/components/VoicePicker";
 
 export const revalidate = 300;
 
@@ -36,6 +37,10 @@ export default async function TopicPage({
           <h1 className="text-2xl font-bold text-slate-800">{topic.title}</h1>
           <p className="text-sm text-slate-500">{topic.description}</p>
         </div>
+      </div>
+
+      <div className="mb-5">
+        <VoicePicker />
       </div>
 
       <TopicLearn phrases={phrases} />

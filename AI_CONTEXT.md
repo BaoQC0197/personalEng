@@ -226,6 +226,16 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 15) — Chọn giọng đọc Nam/Nữ (luyện nghe)
+- Em hỏi vì sao lúc nam lúc nữ: do trước đây KHÔNG ghim giọng → trình duyệt tự
+  chọn giọng mặc định (khác nhau theo máy/trình duyệt). Web Speech API chạy
+  offline trên máy nên KHÔNG gây lag.
+- Tạo `src/lib/speech.ts` (speak trung tâm + ghim giọng + đoán giới tính theo
+  tên + lưu localStorage VÌ giọng khác nhau theo thiết bị). Component
+  `VoicePicker.tsx`: nút 👩 Nữ / 👨 Nam + dropdown giọng cụ thể + Nghe thử.
+- Gỡ hàm `speak` cũ trong TopicQuiz/PracticeSession/PhraseCard → dùng chung
+  `@/lib/speech`. Gắn `VoicePicker` ở trang /practice và trang chủ đề. tsc OK.
+
 ### 2026-06-01 (buổi 14) — PWA: cài ra màn hình chính
 - Em xác nhận tốc độ đã ổn (non-blocking). Thêm **PWA** để cài web ra màn hình
   chính như app: `app/manifest.ts` (display standalone, theme #1c57f5),

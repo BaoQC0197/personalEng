@@ -1,5 +1,6 @@
 import { getAllPhrases, getTopics } from "@/lib/content";
 import PracticeSession from "@/components/PracticeSession";
+import VoicePicker from "@/components/VoicePicker";
 
 export const revalidate = 300;
 
@@ -11,6 +12,9 @@ export default async function PracticePage() {
       <p className="mb-6 text-sm text-slate-500">
         Việt → Anh. Luyện “bật ra” để nói được, không chỉ hiểu.
       </p>
+      <div className="mb-5">
+        <VoicePicker />
+      </div>
       <PracticeSession phrases={phrases} topics={topics} />
     </div>
   );
