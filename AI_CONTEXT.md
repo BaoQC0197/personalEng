@@ -226,6 +226,15 @@ Chi tiết đầy đủ xem [README.md](README.md).
 
 > Mỗi phiên thêm 1 mục: ngày, đã làm gì, em học/ghi nhớ gì, việc tiếp theo.
 
+### 2026-06-01 (buổi 16b) — Tối ưu UX luyện nói
+- Em báo: bấm ~5-6 lần thì lỗi + nhận diện tệ với giọng Việt. Đổi cơ chế:
+  `startRecognition` kiểu **bấm-nói → nói cả câu → bấm Dừng & chấm**
+  (continuous + interimResults: không cắt sớm, hiện chữ trực tiếp), gom **3
+  phương án/đoạn** để công bằng hơn với âm sắc (vẫn ngưỡng 70%, không cho qua
+  dễ). Hủy phiên cũ + dọn timer/abort khi đổi thẻ → bớt lỗi lặp.
+- **Giới hạn thật đã nói rõ với em:** engine free của Chrome vốn kém với giọng
+  Việt + hay lỗi vặt; muốn chuẩn cần API trả phí (Azure/ELSA). Để ngỏ cho sau.
+
 ### 2026-06-01 (buổi 16) — Luyện NÓI: ghi âm + chấm điểm, gate qua câu
 - Thêm chế độ "🎤 Bắt buộc luyện nói" (bật/tắt, ghim localStorage). Sau khi chọn
   đáp án: em bấm mic đọc câu → `SpeechRecognition` nhận chữ → `scoreMatch` chấm

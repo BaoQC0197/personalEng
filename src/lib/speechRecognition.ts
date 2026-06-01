@@ -12,77 +12,99 @@ export function recognitionSupported(): boolean {
   );
 }
 
-// Giữ tham chiếu phiên đang chạy để HỦY trước khi bắt đầu phiên mới
-// (tránh lỗi xung đột khi bấm "Nhấn để nói" lần 2).
+export interface RecoController {
+  stop: () => void;
+  abort: () => void;
+}
+
+export interface RecoHandlers {
+  lang?: string;
+  onInterim?: (text: string) => void; // chữ tạm thời lúc đang nói
+  onDone?: (said: string) => void; // chuỗi gộp khi kết thúc (gồm nhiều phương án)
+  onError?: (code: string) => void;
+}
+
+// Giữ phiên đang chạy để hủy trước khi mở phiên mới (tránh xung đột).
 let active: any = null;
 
-/** Bật mic, nghe 1 câu, trả về chuỗi nhận diện được (hoặc reject nếu lỗi). */
-export function recognizeOnce(lang = "en-US"): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const SR =
-      (window as any).SpeechRecognition ||
-      (window as any).webkitSpeechRecognition;
-    if (!SR) {
-      reject(new Error("unsupported"));
-      return;
+/**
+ * Bắt đầu nhận diện kiểu "bấm để nói → nói cả câu → bấm dừng".
+ * continuous + interim để không bị cắt sớm; gom tối đa 3 phương án/đoạn để
+ * công bằng hơn với giọng có âm sắc (vẫn cần nói trúng từ mới được tính).
+ */
+export function startRecognition(h: RecoHandlers): RecoController | null {
+  const SR =
+    (window as any).SpeechRecognition ||
+    (window as any).webkitSpeechRecognition;
+  if (!SR) {
+    h.onError?.("unsupported");
+    return null;
+  }
+  if (active) {
+    try {
+      active.abort();
+    } catch {
+      /* bỏ qua */
     }
+    active = null;
+  }
 
-    // Hủy phiên cũ còn sót (nếu có) để khỏi xung đột.
-    if (active) {
+  const rec = new SR();
+  active = rec;
+  rec.lang = h.lang ?? "en-US";
+  rec.continuous = true;
+  rec.interimResults = true;
+  rec.maxAlternatives = 3;
+
+  const collected: string[] = [];
+  let hadError = false;
+
+  rec.onresult = (e: any) => {
+    let interim = "";
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const r = e.results[i];
+      if (r.isFinal) {
+        const n = Math.min(r.length, 3);
+        for (let a = 0; a < n; a++) collected.push(r[a].transcript);
+      } else {
+        interim += r[0].transcript;
+      }
+    }
+    if (interim) h.onInterim?.(interim);
+  };
+  rec.onerror = (e: any) => {
+    hadError = true;
+    h.onError?.(e?.error || "error");
+  };
+  rec.onend = () => {
+    if (active === rec) active = null;
+    if (!hadError) h.onDone?.(collected.join(" "));
+  };
+
+  try {
+    rec.start();
+  } catch {
+    if (active === rec) active = null;
+    h.onError?.("start-failed");
+    return null;
+  }
+
+  return {
+    stop: () => {
       try {
-        active.abort();
+        rec.stop();
       } catch {
         /* bỏ qua */
       }
-      active = null;
-    }
-
-    const rec = new SR();
-    active = rec;
-    rec.lang = lang;
-    rec.interimResults = false;
-    rec.maxAlternatives = 1;
-    let settled = false;
-    const clear = () => {
-      if (active === rec) active = null;
-    };
-
-    rec.onresult = (e: any) => {
-      if (settled) return;
-      settled = true;
-      const transcript = e.results?.[0]?.[0]?.transcript ?? "";
+    },
+    abort: () => {
       try {
-        rec.stop(); // nhả mic ngay
+        rec.abort();
       } catch {
         /* bỏ qua */
       }
-      resolve(String(transcript));
-    };
-    rec.onerror = (e: any) => {
-      if (settled) return;
-      settled = true;
-      clear();
-      reject(new Error(e?.error || "error"));
-    };
-    rec.onend = () => {
-      clear();
-      if (settled) return;
-      settled = true;
-      reject(new Error("no-speech"));
-    };
-
-    // Bắt đầu ở lần tick sau để phiên cũ kịp hủy hẳn.
-    setTimeout(() => {
-      try {
-        rec.start();
-      } catch {
-        if (settled) return;
-        settled = true;
-        clear();
-        reject(new Error("start-failed"));
-      }
-    }, 80);
-  });
+    },
+  };
 }
 
 function normalize(s: string): string {
