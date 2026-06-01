@@ -5,7 +5,16 @@
 // Nếu CHƯA cấu hình env (chạy local chưa có Supabase) -> isSupabaseConfigured
 // = false, và các lớp dữ liệu sẽ tự fallback về file JSON / localStorage.
 
+import dns from "node:dns";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+
+// FIX QUAN TRỌNG (production): trên Vercel, kết nối IPv6 tới Supabase hay bị
+// treo ~7s rồi mới rơi về IPv4. Ép phân giải IPv4 trước để gọi DB nhanh trở lại.
+try {
+  dns.setDefaultResultOrder("ipv4first");
+} catch {
+  /* môi trường không hỗ trợ thì bỏ qua */
+}
 
 const url = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;

@@ -1,6 +1,10 @@
-// Route chẩn đoán: đo thời gian fetch THÔ tới Supabase REST ngay trong function
-// (không qua supabase-js) để tách bạch: do thư viện hay do đường mạng.
+// Route chẩn đoán: đo thời gian fetch THÔ tới Supabase REST ngay trong function.
+import dns from "node:dns";
 export const dynamic = "force-dynamic";
+
+try {
+  dns.setDefaultResultOrder("ipv4first");
+} catch {}
 
 export async function GET() {
   const url = process.env.SUPABASE_URL;
