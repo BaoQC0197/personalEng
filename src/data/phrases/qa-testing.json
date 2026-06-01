@@ -1,0 +1,452 @@
+[
+  {
+    "id": "qa-001",
+    "topicId": "qa-testing",
+    "en": "I found a bug, let me write up the steps to reproduce it.",
+    "vi": "Tôi tìm thấy một lỗi, để tôi viết lại các bước tái hiện nó.",
+    "highlights": ["steps to reproduce"],
+    "note": "Câu kinh điển khi log bug. 'reproduce' = tái hiện lỗi.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-002",
+    "topicId": "qa-testing",
+    "en": "This bug is not reproducible on my environment.",
+    "vi": "Lỗi này không tái hiện được trên môi trường của tôi.",
+    "highlights": ["not reproducible", "environment"],
+    "note": "Dùng khi bug dev không repro được. 'environment' = môi trường (dev/staging/prod).",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-003",
+    "topicId": "qa-testing",
+    "en": "What's the expected behavior versus the actual behavior?",
+    "vi": "Hành vi mong đợi so với hành vi thực tế là gì?",
+    "highlights": ["expected behavior", "actual behavior"],
+    "note": "Hai cụm BẮT BUỘC phải nhớ khi viết bug report.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-004",
+    "topicId": "qa-testing",
+    "en": "Could you assign this ticket to me?",
+    "vi": "Bạn giao ticket này cho tôi được không?",
+    "highlights": ["assign this ticket to me"],
+    "note": "'assign' = giao việc. Dùng trên Jira/Trello.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-005",
+    "topicId": "qa-testing",
+    "en": "I'll mark this as a blocker because it stops the whole flow.",
+    "vi": "Tôi sẽ đánh dấu cái này là blocker vì nó chặn cả luồng.",
+    "highlights": ["blocker", "stops the whole flow"],
+    "note": "'blocker' = lỗi nghiêm trọng chặn tiến độ. Mức ưu tiên cao nhất.",
+    "tags": ["severity"]
+  },
+  {
+    "id": "qa-006",
+    "topicId": "qa-testing",
+    "en": "Is this a regression? It used to work fine before.",
+    "vi": "Đây có phải lỗi hồi quy không? Trước đó nó vẫn chạy tốt mà.",
+    "highlights": ["regression", "used to work fine"],
+    "note": "'regression' = tính năng từng chạy đúng giờ lại hỏng.",
+    "tags": ["regression"]
+  },
+  {
+    "id": "qa-007",
+    "topicId": "qa-testing",
+    "en": "I'm writing test cases to cover the edge cases.",
+    "vi": "Tôi đang viết test case để bao phủ các trường hợp biên.",
+    "highlights": ["test cases", "edge cases"],
+    "note": "'edge case' = trường hợp hiếm/biên, dễ lọt bug.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-008",
+    "topicId": "qa-testing",
+    "en": "Let me double-check on the staging environment before we release.",
+    "vi": "Để tôi kiểm tra lại trên môi trường staging trước khi mình phát hành.",
+    "highlights": ["double-check", "staging environment", "release"],
+    "note": "'double-check' = kiểm tra lại cho chắc. 'release' = phát hành.",
+    "tags": ["release"]
+  },
+  {
+    "id": "qa-009",
+    "topicId": "qa-testing",
+    "en": "The build failed, I think it's a flaky test.",
+    "vi": "Bản build lỗi rồi, tôi nghĩ là do một test chập chờn.",
+    "highlights": ["build failed", "flaky test"],
+    "note": "'flaky test' = test lúc pass lúc fail không ổn định.",
+    "tags": ["ci", "automation"]
+  },
+  {
+    "id": "qa-010",
+    "topicId": "qa-testing",
+    "en": "Can you confirm whether this is a known issue?",
+    "vi": "Bạn xác nhận giúp đây có phải lỗi đã biết không?",
+    "highlights": ["confirm", "known issue"],
+    "note": "'known issue' = lỗi đã biết, đã ghi nhận từ trước.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-011",
+    "topicId": "qa-testing",
+    "en": "I've verified the fix and I'm closing the ticket.",
+    "vi": "Tôi đã kiểm chứng bản sửa và sẽ đóng ticket lại.",
+    "highlights": ["verified the fix", "closing the ticket"],
+    "note": "'verify the fix' = kiểm chứng bản fix đã đúng chưa.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-012",
+    "topicId": "qa-testing",
+    "en": "Yesterday I tested the login flow, today I'll work on the payment module.",
+    "vi": "Hôm qua tôi test luồng đăng nhập, hôm nay tôi sẽ làm module thanh toán.",
+    "highlights": ["tested the login flow", "payment module"],
+    "note": "Mẫu câu cho daily standup: hôm qua / hôm nay / vướng mắc.",
+    "tags": ["standup"]
+  },
+  {
+    "id": "qa-013",
+    "topicId": "qa-testing",
+    "en": "I can consistently reproduce this on the latest build.",
+    "vi": "Tôi tái hiện được lỗi này một cách ổn định trên bản build mới nhất.",
+    "highlights": ["consistently reproduce", "latest build"],
+    "note": "'consistently' = ổn định, lần nào cũng ra. Ngược với 'intermittently'.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-014",
+    "topicId": "qa-testing",
+    "en": "This only happens intermittently.",
+    "vi": "Lỗi này chỉ thỉnh thoảng mới xảy ra.",
+    "highlights": ["intermittently"],
+    "note": "'intermittently' = chập chờn, lúc có lúc không — loại bug khó chịu nhất.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-015",
+    "topicId": "qa-testing",
+    "en": "Let me attach a screen recording of the issue.",
+    "vi": "Để tôi đính kèm một video quay màn hình lỗi.",
+    "highlights": ["screen recording"],
+    "note": "'screen recording' = video quay màn hình — bằng chứng tốt khi bug khó tả.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-016",
+    "topicId": "qa-testing",
+    "en": "The severity is high but the priority is low.",
+    "vi": "Mức độ nghiêm trọng thì cao nhưng độ ưu tiên lại thấp.",
+    "highlights": ["severity", "priority"],
+    "note": "Phân biệt cốt lõi: 'severity' = mức độ nghiêm trọng; 'priority' = độ ưu tiên xử lý.",
+    "tags": ["severity"]
+  },
+  {
+    "id": "qa-017",
+    "topicId": "qa-testing",
+    "en": "I'll downgrade this to a minor issue.",
+    "vi": "Tôi sẽ hạ cái này xuống mức lỗi nhẹ.",
+    "highlights": ["downgrade", "minor issue"],
+    "note": "'downgrade' = hạ mức; 'minor issue' = lỗi nhẹ. Ngược lại là 'major issue'.",
+    "tags": ["severity"]
+  },
+  {
+    "id": "qa-018",
+    "topicId": "qa-testing",
+    "en": "This is a UI glitch, not a functional bug.",
+    "vi": "Đây là lỗi hiển thị giao diện, không phải lỗi chức năng.",
+    "highlights": ["UI glitch", "functional bug"],
+    "note": "'UI glitch' = lỗi vặt về giao diện; 'functional bug' = lỗi sai chức năng.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-019",
+    "topicId": "qa-testing",
+    "en": "The app crashes when I tap the submit button.",
+    "vi": "Ứng dụng bị sập khi tôi bấm nút gửi.",
+    "highlights": ["crashes", "tap the submit button"],
+    "note": "'crash' = sập/đứng hẳn ứng dụng. 'tap' = chạm/bấm (trên mobile).",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-020",
+    "topicId": "qa-testing",
+    "en": "It throws a 500 error on the server side.",
+    "vi": "Nó báo lỗi 500 ở phía máy chủ.",
+    "highlights": ["throws a 500 error", "server side"],
+    "note": "'throw an error' = quăng/báo lỗi. '500' = lỗi phía server; '4xx' = phía client.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-021",
+    "topicId": "qa-testing",
+    "en": "The page hangs and never finishes loading.",
+    "vi": "Trang bị treo và không tải xong được.",
+    "highlights": ["hangs", "loading"],
+    "note": "'hang' = treo, đứng im không phản hồi (khác 'crash' là sập hẳn).",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-022",
+    "topicId": "qa-testing",
+    "en": "There's a typo in the error message.",
+    "vi": "Có một lỗi chính tả trong thông báo lỗi.",
+    "highlights": ["typo", "error message"],
+    "note": "'typo' = lỗi đánh máy/chính tả. Lỗi nhỏ nhưng QA vẫn nên báo.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-023",
+    "topicId": "qa-testing",
+    "en": "The layout breaks on mobile screens.",
+    "vi": "Bố cục bị vỡ trên màn hình điện thoại.",
+    "highlights": ["layout breaks", "mobile screens"],
+    "note": "'layout breaks' = bố cục bị vỡ/lệch. Hay gặp khi test responsive.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-024",
+    "topicId": "qa-testing",
+    "en": "We need more test coverage for this module.",
+    "vi": "Mình cần tăng độ phủ kiểm thử cho module này.",
+    "highlights": ["test coverage"],
+    "note": "'test coverage' = độ phủ kiểm thử — bao nhiêu phần code/case đã được test.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-025",
+    "topicId": "qa-testing",
+    "en": "Let me write a few negative test cases.",
+    "vi": "Để tôi viết vài test case tình huống sai.",
+    "highlights": ["negative test cases"],
+    "note": "'negative test case' = ca kiểm thử với dữ liệu/hành vi sai, xem hệ thống có chặn đúng không.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-026",
+    "topicId": "qa-testing",
+    "en": "Have we covered the boundary values?",
+    "vi": "Mình đã kiểm các giá trị biên chưa?",
+    "highlights": ["boundary values"],
+    "note": "'boundary values' = giá trị biên (min, max, 0, rỗng...) — nơi hay lọt bug.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-027",
+    "topicId": "qa-testing",
+    "en": "This scenario isn't in the test plan yet.",
+    "vi": "Kịch bản này chưa có trong kế hoạch test.",
+    "highlights": ["scenario", "test plan"],
+    "note": "'scenario' = kịch bản/tình huống test; 'test plan' = kế hoạch kiểm thử.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-028",
+    "topicId": "qa-testing",
+    "en": "I'll prepare the test data first.",
+    "vi": "Tôi sẽ chuẩn bị dữ liệu test trước.",
+    "highlights": ["test data"],
+    "note": "'test data' = dữ liệu dùng để kiểm thử (tài khoản mẫu, đơn hàng mẫu...).",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-029",
+    "topicId": "qa-testing",
+    "en": "Let's add this to the regression suite.",
+    "vi": "Mình thêm cái này vào bộ test hồi quy nhé.",
+    "highlights": ["regression suite"],
+    "note": "'regression suite' = bộ test hồi quy chạy lại mỗi lần có thay đổi.",
+    "tags": ["regression"]
+  },
+  {
+    "id": "qa-030",
+    "topicId": "qa-testing",
+    "en": "Smoke testing passed, moving on to detailed testing.",
+    "vi": "Test sơ bộ đã qua, chuyển sang test chi tiết.",
+    "highlights": ["Smoke testing", "detailed testing"],
+    "note": "'smoke testing' = test nhanh chức năng chính xem có chạy được không trước khi test sâu.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-031",
+    "topicId": "qa-testing",
+    "en": "I'm blocked, I'm waiting on the dev to push the fix.",
+    "vi": "Tôi đang bị chặn, đang đợi dev đẩy bản sửa lên.",
+    "highlights": ["I'm blocked", "waiting on"],
+    "note": "'I'm blocked' = tôi bị chặn (không làm tiếp được). 'waiting on someone' = chờ ai đó.",
+    "tags": ["standup"]
+  },
+  {
+    "id": "qa-032",
+    "topicId": "qa-testing",
+    "en": "Could you reassign this ticket? It's out of my scope.",
+    "vi": "Bạn giao lại ticket này được không? Nó ngoài phạm vi của tôi.",
+    "highlights": ["reassign", "out of my scope"],
+    "note": "'reassign' = giao lại cho người khác. 'out of my scope' = ngoài phạm vi việc của tôi.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-033",
+    "topicId": "qa-testing",
+    "en": "I'll move this ticket to In Progress.",
+    "vi": "Tôi sẽ chuyển ticket này sang trạng thái Đang làm.",
+    "highlights": ["move this ticket", "In Progress"],
+    "note": "Các trạng thái Jira hay gặp: To Do, In Progress, In Review, Done.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-034",
+    "topicId": "qa-testing",
+    "en": "This ticket is ready for QA.",
+    "vi": "Ticket này sẵn sàng để QA kiểm thử.",
+    "highlights": ["ready for QA"],
+    "note": "'ready for QA' = dev làm xong, đến lượt QA test. Câu cửa miệng trên bảng Jira.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-035",
+    "topicId": "qa-testing",
+    "en": "I'm reopening this ticket, the bug is still there.",
+    "vi": "Tôi mở lại ticket này, lỗi vẫn còn.",
+    "highlights": ["reopening", "still there"],
+    "note": "'reopen a ticket' = mở lại ticket đã đóng vì lỗi chưa được sửa dứt.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-036",
+    "topicId": "qa-testing",
+    "en": "Let me update the ticket with my findings.",
+    "vi": "Để tôi cập nhật ticket với những gì tôi phát hiện.",
+    "highlights": ["update the ticket", "findings"],
+    "note": "'findings' = những phát hiện/kết quả khi test. Ghi vào ticket cho dev nắm.",
+    "tags": ["jira"]
+  },
+  {
+    "id": "qa-037",
+    "topicId": "qa-testing",
+    "en": "No blockers on my side today.",
+    "vi": "Hôm nay phía tôi không có gì vướng.",
+    "highlights": ["No blockers", "on my side"],
+    "note": "Câu standup quen thuộc. 'on my side' = về phía tôi.",
+    "tags": ["standup"]
+  },
+  {
+    "id": "qa-038",
+    "topicId": "qa-testing",
+    "en": "I'll sync with the dev team after standup.",
+    "vi": "Tôi sẽ trao đổi với team dev sau buổi standup.",
+    "highlights": ["sync with", "standup"],
+    "note": "'sync with someone' = trao đổi/cập nhật nhanh với ai đó.",
+    "tags": ["standup"]
+  },
+  {
+    "id": "qa-039",
+    "topicId": "qa-testing",
+    "en": "The automated test suite is green.",
+    "vi": "Bộ test tự động đều xanh (pass hết).",
+    "highlights": ["automated test suite", "green"],
+    "note": "'green' = tất cả pass; 'red' = có test fail. Ngôn ngữ CI/CD hay dùng.",
+    "tags": ["automation", "ci"]
+  },
+  {
+    "id": "qa-040",
+    "topicId": "qa-testing",
+    "en": "A couple of tests are failing in the pipeline.",
+    "vi": "Có vài test đang fail trong pipeline.",
+    "highlights": ["failing", "pipeline"],
+    "note": "'pipeline' = luồng CI/CD tự động build-test-deploy. 'a couple of' = một vài.",
+    "tags": ["automation", "ci"]
+  },
+  {
+    "id": "qa-041",
+    "topicId": "qa-testing",
+    "en": "I need to update the test script for the new flow.",
+    "vi": "Tôi cần cập nhật script test cho luồng mới.",
+    "highlights": ["test script", "new flow"],
+    "note": "'test script' = đoạn mã/kịch bản test tự động. 'flow' = luồng nghiệp vụ.",
+    "tags": ["automation"]
+  },
+  {
+    "id": "qa-042",
+    "topicId": "qa-testing",
+    "en": "Let me rerun the failed tests.",
+    "vi": "Để tôi chạy lại các test bị fail.",
+    "highlights": ["rerun", "failed tests"],
+    "note": "'rerun' = chạy lại. Hay làm khi nghi ngờ test fail do flaky chứ không phải bug thật.",
+    "tags": ["automation"]
+  },
+  {
+    "id": "qa-043",
+    "topicId": "qa-testing",
+    "en": "Can you deploy the latest build to the QA environment?",
+    "vi": "Bạn deploy bản build mới nhất lên môi trường QA được không?",
+    "highlights": ["deploy", "QA environment"],
+    "note": "'deploy' = triển khai bản build lên môi trường. QA env = môi trường để QA test.",
+    "tags": ["release"]
+  },
+  {
+    "id": "qa-044",
+    "topicId": "qa-testing",
+    "en": "I tested it on both Chrome and Safari.",
+    "vi": "Tôi đã test trên cả Chrome lẫn Safari.",
+    "highlights": ["both Chrome and Safari"],
+    "note": "Test đa trình duyệt (cross-browser). 'both A and B' = cả A lẫn B.",
+    "tags": ["test design"]
+  },
+  {
+    "id": "qa-045",
+    "topicId": "qa-testing",
+    "en": "It works on dev but fails on production.",
+    "vi": "Nó chạy ổn trên dev nhưng lỗi trên production.",
+    "highlights": ["works on dev", "fails on production"],
+    "note": "Tình huống kinh điển. 'production' (prod) = môi trường thật người dùng đang dùng.",
+    "tags": ["release"]
+  },
+  {
+    "id": "qa-046",
+    "topicId": "qa-testing",
+    "en": "I'll do a quick sanity check before sign-off.",
+    "vi": "Tôi sẽ kiểm tra nhanh cho chắc trước khi duyệt.",
+    "highlights": ["sanity check", "sign-off"],
+    "note": "'sanity check' = kiểm tra nhanh xem có ổn không. 'sign-off' = duyệt/chấp thuận cuối.",
+    "tags": ["release"]
+  },
+  {
+    "id": "qa-047",
+    "topicId": "qa-testing",
+    "en": "Everything looks good, it's ready to ship.",
+    "vi": "Mọi thứ ổn cả, sẵn sàng phát hành.",
+    "highlights": ["looks good", "ready to ship"],
+    "note": "'ready to ship' = sẵn sàng đưa ra (phát hành). 'ship' = phát hành sản phẩm.",
+    "tags": ["release"]
+  },
+  {
+    "id": "qa-048",
+    "topicId": "qa-testing",
+    "en": "Let me clear the cache and try again.",
+    "vi": "Để tôi xóa cache rồi thử lại.",
+    "highlights": ["clear the cache", "try again"],
+    "note": "Mẹo cơ bản khi gặp lỗi lạ: xóa cache thử lại trước khi kết luận là bug.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-049",
+    "topicId": "qa-testing",
+    "en": "Could you share the exact steps you took?",
+    "vi": "Bạn chia sẻ chính xác các bước bạn đã làm được không?",
+    "highlights": ["exact steps"],
+    "note": "Hỏi để tái hiện lỗi từ phía người báo. 'exact steps' = các bước chính xác.",
+    "tags": ["bug report"]
+  },
+  {
+    "id": "qa-050",
+    "topicId": "qa-testing",
+    "en": "I couldn't reproduce it, could it be a one-off?",
+    "vi": "Tôi không tái hiện được, liệu có phải lỗi xảy ra một lần rồi thôi không?",
+    "highlights": ["couldn't reproduce", "one-off"],
+    "note": "'one-off' = chuyện xảy ra duy nhất một lần, khó lặp lại.",
+    "tags": ["bug report"]
+  }
+]

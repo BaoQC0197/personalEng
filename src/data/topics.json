@@ -1,0 +1,44 @@
+[
+  {
+    "id": "qa-testing",
+    "title": "Công việc QA / Testing",
+    "description": "Báo bug, viết test case, daily standup, trao đổi chuyên môn kiểm thử.",
+    "icon": "🐞",
+    "accent": "from-rose-500 to-orange-400"
+  },
+  {
+    "id": "colleagues",
+    "title": "Giao tiếp đồng nghiệp",
+    "description": "Nói chuyện với team, hỏi/giúp đỡ, họp, phản hồi, ý kiến hằng ngày.",
+    "icon": "💬",
+    "accent": "from-brand-500 to-cyan-400"
+  },
+  {
+    "id": "social",
+    "title": "Giao tiếp xã hội",
+    "description": "Chào hỏi, small talk, đời sống thường ngày ngoài công việc.",
+    "icon": "🤝",
+    "accent": "from-emerald-500 to-teal-400"
+  },
+  {
+    "id": "email-chat",
+    "title": "Email & Chat công việc",
+    "description": "Nhắn Slack/Teams, viết email ngắn cho team & khách: nhờ vả, xác nhận, cập nhật.",
+    "icon": "✉️",
+    "accent": "from-violet-500 to-fuchsia-400"
+  },
+  {
+    "id": "connectors",
+    "title": "Từ nối & câu giờ khi nói",
+    "description": "Từ cửa miệng, từ nối, câu \"câu giờ\" để vừa nói vừa nghĩ mà không bị khựng — đúng kiểu nói của em.",
+    "icon": "💭",
+    "accent": "from-amber-500 to-yellow-400"
+  },
+  {
+    "id": "clarify",
+    "title": "Khi nghe không kịp",
+    "description": "Nhờ nói lại, nói chậm, xác nhận lại khi nghe không rõ — để không bị đứng hình lúc họ nói nhanh.",
+    "icon": "👂",
+    "accent": "from-sky-500 to-blue-400"
+  }
+]

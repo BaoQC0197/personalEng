@@ -1,0 +1,452 @@
+[
+  {
+    "id": "col-001",
+    "topicId": "colleagues",
+    "en": "Could you walk me through this part?",
+    "vi": "Bạn giải thích cho tôi phần này một lượt được không?",
+    "highlights": ["walk me through"],
+    "note": "'walk someone through' = hướng dẫn ai đó từng bước.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-002",
+    "topicId": "colleagues",
+    "en": "Sorry to bother you, do you have a minute?",
+    "vi": "Xin lỗi làm phiền, bạn có rảnh một phút không?",
+    "highlights": ["Sorry to bother you", "have a minute"],
+    "note": "Cách lịch sự để bắt chuyện hỏi việc.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-003",
+    "topicId": "colleagues",
+    "en": "I'm not sure I follow, could you clarify?",
+    "vi": "Tôi chưa chắc đã hiểu, bạn nói rõ hơn được không?",
+    "highlights": ["I'm not sure I follow", "clarify"],
+    "note": "'I follow' = tôi theo kịp/hiểu. Lịch sự khi chưa hiểu.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-004",
+    "topicId": "colleagues",
+    "en": "Let me get back to you on that.",
+    "vi": "Để tôi trả lời bạn việc đó sau nhé.",
+    "highlights": ["get back to you"],
+    "note": "'get back to you' = phản hồi sau. Cực kỳ thông dụng.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-005",
+    "topicId": "colleagues",
+    "en": "That makes sense to me.",
+    "vi": "Điều đó hợp lý với tôi.",
+    "highlights": ["makes sense"],
+    "note": "'make sense' = hợp lý, có lý. Dùng khi đồng tình.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-006",
+    "topicId": "colleagues",
+    "en": "Just to be on the same page, you mean we ship it tomorrow?",
+    "vi": "Cho chắc là cùng hiểu nhau nhé, ý bạn là mai mình ship đúng không?",
+    "highlights": ["on the same page", "ship it"],
+    "note": "'on the same page' = hiểu thống nhất với nhau. 'ship' = phát hành.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-007",
+    "topicId": "colleagues",
+    "en": "Can we sync up later this afternoon?",
+    "vi": "Mình trao đổi nhanh vào chiều nay được không?",
+    "highlights": ["sync up"],
+    "note": "'sync up' = họp nhanh để cập nhật thông tin.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-008",
+    "topicId": "colleagues",
+    "en": "I'll take care of it, no worries.",
+    "vi": "Để tôi lo việc đó, đừng lo.",
+    "highlights": ["take care of it", "no worries"],
+    "note": "'take care of it' = lo liệu việc đó. 'no worries' = không sao đâu.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-009",
+    "topicId": "colleagues",
+    "en": "Thanks for the heads-up.",
+    "vi": "Cảm ơn đã báo trước.",
+    "highlights": ["heads-up"],
+    "note": "'a heads-up' = lời nhắc/báo trước. Rất hay dùng ở công sở.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-010",
+    "topicId": "colleagues",
+    "en": "Correct me if I'm wrong, but this should be the dev's responsibility.",
+    "vi": "Sửa giúp nếu tôi sai, nhưng cái này nên là trách nhiệm của dev.",
+    "highlights": ["Correct me if I'm wrong", "responsibility"],
+    "note": "Mở đầu lịch sự khi nêu ý kiến có thể gây tranh luận.",
+    "tags": ["meeting", "feedback"]
+  },
+  {
+    "id": "col-011",
+    "topicId": "colleagues",
+    "en": "Could you give me a hand with this?",
+    "vi": "Bạn giúp tôi một tay việc này được không?",
+    "highlights": ["give me a hand"],
+    "note": "'give a hand' = giúp một tay.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-012",
+    "topicId": "colleagues",
+    "en": "I appreciate your help, thank you so much.",
+    "vi": "Tôi rất cảm kích sự giúp đỡ của bạn, cảm ơn nhiều.",
+    "highlights": ["appreciate your help"],
+    "note": "'appreciate' = trân trọng/cảm kích. Lịch sự hơn 'thanks'.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-013",
+    "topicId": "colleagues",
+    "en": "Can I pick your brain for a second?",
+    "vi": "Cho tôi hỏi xin ý kiến bạn một chút được không?",
+    "highlights": ["pick your brain"],
+    "note": "'pick someone's brain' = hỏi xin kinh nghiệm/ý kiến của ai đó. Rất thân thiện.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-014",
+    "topicId": "colleagues",
+    "en": "Could you cover for me while I'm out?",
+    "vi": "Bạn trực giúp tôi lúc tôi vắng được không?",
+    "highlights": ["cover for me"],
+    "note": "'cover for someone' = làm thay/đỡ việc cho ai khi họ vắng.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-015",
+    "topicId": "colleagues",
+    "en": "I'll handle this one, you take the other.",
+    "vi": "Tôi lo cái này, bạn lo cái kia.",
+    "highlights": ["handle this one", "take the other"],
+    "note": "Chia việc nhanh gọn. 'handle' = lo/xử lý.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-016",
+    "topicId": "colleagues",
+    "en": "Let me know if I can help with anything.",
+    "vi": "Cứ báo tôi nếu tôi giúp được gì.",
+    "highlights": ["help with anything"],
+    "note": "Câu chủ động đề nghị giúp đỡ — ghi điểm với đồng nghiệp.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-017",
+    "topicId": "colleagues",
+    "en": "Feel free to ping me if you get stuck.",
+    "vi": "Cứ nhắn tôi nếu bạn bị tắc nhé.",
+    "highlights": ["ping me", "get stuck"],
+    "note": "'ping' = nhắn nhanh trên chat. 'get stuck' = bị tắc, không làm tiếp được.",
+    "tags": ["help"]
+  },
+  {
+    "id": "col-018",
+    "topicId": "colleagues",
+    "en": "I owe you one, thanks!",
+    "vi": "Tôi nợ bạn một lần nhé, cảm ơn!",
+    "highlights": ["owe you one"],
+    "note": "'I owe you one' = tôi nợ bạn một ơn — cảm ơn thân mật khi được giúp.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-019",
+    "topicId": "colleagues",
+    "en": "Sounds good to me.",
+    "vi": "Nghe ổn đấy.",
+    "highlights": ["Sounds good"],
+    "note": "Đồng tình nhanh, thân thiện. Cực kỳ thông dụng ở công sở.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-020",
+    "topicId": "colleagues",
+    "en": "Fair enough.",
+    "vi": "Ừ, cũng hợp lý.",
+    "highlights": ["Fair enough"],
+    "note": "'Fair enough' = ờ, nghe cũng có lý — chấp nhận ý người khác dù chưa hẳn đồng ý hoàn toàn.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-021",
+    "topicId": "colleagues",
+    "en": "I'm on it.",
+    "vi": "Tôi làm ngay đây.",
+    "highlights": ["on it"],
+    "note": "'I'm on it' = tôi bắt tay làm ngay. Ngắn, dứt khoát, chuyên nghiệp.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-022",
+    "topicId": "colleagues",
+    "en": "Got it, will do.",
+    "vi": "Hiểu rồi, tôi làm ngay.",
+    "highlights": ["Got it", "will do"],
+    "note": "'Got it' = hiểu rồi. 'will do' = sẽ làm. Cặp đôi xác nhận gọn gàng.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-023",
+    "topicId": "colleagues",
+    "en": "That works for me.",
+    "vi": "Vậy ổn với tôi.",
+    "highlights": ["works for me"],
+    "note": "'That works for me' = cái đó hợp/ổn với tôi. Dùng khi chốt phương án, lịch hẹn.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-024",
+    "topicId": "colleagues",
+    "en": "Good point, I hadn't thought of that.",
+    "vi": "Ý hay đấy, tôi chưa nghĩ tới.",
+    "highlights": ["Good point"],
+    "note": "'Good point' = ý hay/đúng đấy — khen ý kiến người khác, nghe rất tự nhiên.",
+    "tags": ["meeting", "feedback"]
+  },
+  {
+    "id": "col-025",
+    "topicId": "colleagues",
+    "en": "I see your point, but I have a different take.",
+    "vi": "Tôi hiểu ý bạn, nhưng tôi có cách nhìn khác.",
+    "highlights": ["I see your point", "a different take"],
+    "note": "Phản biện lịch sự: công nhận trước, nêu khác sau. 'take' = cách nhìn/quan điểm.",
+    "tags": ["meeting", "feedback"]
+  },
+  {
+    "id": "col-026",
+    "topicId": "colleagues",
+    "en": "I'm not so sure about that.",
+    "vi": "Tôi không chắc lắm về điều đó.",
+    "highlights": ["not so sure"],
+    "note": "Cách bày tỏ nghi ngờ nhẹ nhàng, không gay gắt.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-027",
+    "topicId": "colleagues",
+    "en": "Let's run it by the team first.",
+    "vi": "Mình hỏi ý team trước đã nhé.",
+    "highlights": ["run it by the team"],
+    "note": "'run something by someone' = hỏi ý kiến ai đó trước khi quyết.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-028",
+    "topicId": "colleagues",
+    "en": "I'd rather we test it before deciding.",
+    "vi": "Tôi thà mình test trước rồi hãy quyết.",
+    "highlights": ["I'd rather"],
+    "note": "'I'd rather...' = tôi thà/nghiêng về việc... — nêu lựa chọn ưu tiên một cách nhẹ nhàng.",
+    "tags": ["meeting", "feedback"]
+  },
+  {
+    "id": "col-029",
+    "topicId": "colleagues",
+    "en": "Let's take this offline.",
+    "vi": "Cái này mình bàn riêng sau nhé.",
+    "highlights": ["take this offline"],
+    "note": "'take it offline' = bàn riêng sau cuộc họp (kẻo lạc đề / mất thời gian cả nhóm).",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-030",
+    "topicId": "colleagues",
+    "en": "Can we circle back to this later?",
+    "vi": "Mình quay lại chuyện này sau được không?",
+    "highlights": ["circle back"],
+    "note": "'circle back' = quay lại bàn tiếp sau. Rất hay dùng trong họp.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-031",
+    "topicId": "colleagues",
+    "en": "Let's park this for now.",
+    "vi": "Cái này mình tạm gác lại đã.",
+    "highlights": ["park this"],
+    "note": "'park something' = gác lại tạm thời để xử lý việc khác trước.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-032",
+    "topicId": "colleagues",
+    "en": "Just to recap what we agreed on.",
+    "vi": "Tóm lại những gì mình đã thống nhất.",
+    "highlights": ["recap"],
+    "note": "'recap' = tóm tắt lại. Hay dùng cuối họp để chốt điểm chung.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-033",
+    "topicId": "colleagues",
+    "en": "Can you give us a quick update?",
+    "vi": "Bạn cập nhật nhanh cho cả nhóm được không?",
+    "highlights": ["quick update"],
+    "note": "Xin cập nhật ngắn gọn về tiến độ. Quen thuộc trong họp/standup.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-034",
+    "topicId": "colleagues",
+    "en": "We're running low on time, let's wrap up.",
+    "vi": "Mình sắp hết giờ rồi, kết thúc thôi.",
+    "highlights": ["running low on time", "wrap up"],
+    "note": "'running low on time' = sắp hết giờ. 'wrap up' = kết thúc/gói lại.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-035",
+    "topicId": "colleagues",
+    "en": "Who's taking the lead on this?",
+    "vi": "Ai sẽ đứng đầu lo việc này?",
+    "highlights": ["taking the lead"],
+    "note": "'take the lead' = đứng ra phụ trách/dẫn dắt một việc.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-036",
+    "topicId": "colleagues",
+    "en": "From my point of view, we should test first.",
+    "vi": "Theo góc nhìn của tôi, mình nên test trước.",
+    "highlights": ["From my point of view"],
+    "note": "'From my point of view' = theo góc nhìn của tôi — mở đầu khi nêu quan điểm.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-037",
+    "topicId": "colleagues",
+    "en": "Honestly, I think we can do better here.",
+    "vi": "Thật lòng mà nói, tôi nghĩ mình có thể làm tốt hơn ở chỗ này.",
+    "highlights": ["Honestly", "do better"],
+    "note": "Góp ý thẳng nhưng vẫn lịch sự. 'do better' = làm tốt hơn.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-038",
+    "topicId": "colleagues",
+    "en": "Just my two cents on this.",
+    "vi": "Chỉ là vài ý nhỏ của tôi thôi.",
+    "highlights": ["my two cents"],
+    "note": "'my two cents' = ý kiến đóng góp khiêm tốn của tôi. Nói trước khi góp ý cho nhẹ nhàng.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-039",
+    "topicId": "colleagues",
+    "en": "I'd suggest we keep it simple.",
+    "vi": "Tôi đề xuất mình làm cho đơn giản thôi.",
+    "highlights": ["I'd suggest", "keep it simple"],
+    "note": "'I'd suggest' = tôi đề xuất. 'keep it simple' = giữ cho đơn giản.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-040",
+    "topicId": "colleagues",
+    "en": "Let's not over-complicate this.",
+    "vi": "Mình đừng làm phức tạp hóa chuyện này.",
+    "highlights": ["over-complicate"],
+    "note": "'over-complicate' = làm cho rối/phức tạp quá mức cần thiết.",
+    "tags": ["feedback"]
+  },
+  {
+    "id": "col-041",
+    "topicId": "colleagues",
+    "en": "Are you free for a quick call?",
+    "vi": "Bạn rảnh gọi nhanh một cuộc không?",
+    "highlights": ["free for a quick call"],
+    "note": "Rủ gọi nhanh để trao đổi. 'quick call' = cuộc gọi ngắn.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-042",
+    "topicId": "colleagues",
+    "en": "Can we push the meeting to tomorrow?",
+    "vi": "Mình dời cuộc họp sang mai được không?",
+    "highlights": ["push the meeting"],
+    "note": "'push (a meeting)' = dời lịch trễ hơn. Ngược lại 'move up' = dời sớm hơn.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-043",
+    "topicId": "colleagues",
+    "en": "I'm a bit swamped right now.",
+    "vi": "Giờ tôi hơi ngập việc.",
+    "highlights": ["swamped"],
+    "note": "'swamped' = ngập đầu trong việc, quá tải. Mạnh hơn 'busy'.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-044",
+    "topicId": "colleagues",
+    "en": "I'll get this done by end of day.",
+    "vi": "Tôi sẽ làm xong cái này trong hôm nay.",
+    "highlights": ["by end of day"],
+    "note": "'end of day' (EOD) = trước hết ngày làm việc. Cụm hẹn deadline rất phổ biến.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-045",
+    "topicId": "colleagues",
+    "en": "I'm almost done, just wrapping up.",
+    "vi": "Tôi gần xong rồi, đang hoàn tất nốt.",
+    "highlights": ["almost done", "wrapping up"],
+    "note": "'almost done' = gần xong. 'wrap up' ở đây = hoàn tất phần cuối.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "col-046",
+    "topicId": "colleagues",
+    "en": "My bad, I missed your message.",
+    "vi": "Lỗi tôi, tôi lỡ mất tin nhắn của bạn.",
+    "highlights": ["My bad"],
+    "note": "'My bad' = lỗi của tôi (thân mật, nhận lỗi nhẹ nhàng).",
+    "tags": ["polite"]
+  },
+  {
+    "id": "col-047",
+    "topicId": "colleagues",
+    "en": "Sorry, I'm a little behind on this.",
+    "vi": "Xin lỗi, tôi hơi bị trễ phần này.",
+    "highlights": ["behind on"],
+    "note": "'behind on something' = bị chậm/trễ tiến độ việc gì đó.",
+    "tags": ["polite"]
+  },
+  {
+    "id": "col-048",
+    "topicId": "colleagues",
+    "en": "Thanks for being patient with me.",
+    "vi": "Cảm ơn bạn đã kiên nhẫn với tôi.",
+    "highlights": ["being patient"],
+    "note": "Lời cảm ơn lịch sự khi mình làm người khác phải chờ.",
+    "tags": ["polite"]
+  },
+  {
+    "id": "col-049",
+    "topicId": "colleagues",
+    "en": "Let's touch base tomorrow morning.",
+    "vi": "Sáng mai mình trao đổi nhanh nhé.",
+    "highlights": ["touch base"],
+    "note": "'touch base' = liên lạc/trao đổi ngắn để cập nhật nhau.",
+    "tags": ["meeting"]
+  },
+  {
+    "id": "col-050",
+    "topicId": "colleagues",
+    "en": "Great work, everyone!",
+    "vi": "Cả nhà làm tốt lắm!",
+    "highlights": ["Great work"],
+    "note": "Lời khen/động viên cả nhóm. Đơn giản mà hiệu quả.",
+    "tags": ["reply"]
+  }
+]

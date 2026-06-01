@@ -1,0 +1,452 @@
+[
+  {
+    "id": "mail-001",
+    "topicId": "email-chat",
+    "en": "Just a heads-up: the build on staging is broken.",
+    "vi": "Báo nhanh nhé: bản build trên staging đang hỏng.",
+    "highlights": ["Just a heads-up", "broken"],
+    "note": "Mở đầu tin nhắn báo tình huống. 'heads-up' = báo trước, rất hay dùng trên chat.",
+    "tags": ["chat", "report"]
+  },
+  {
+    "id": "mail-002",
+    "topicId": "email-chat",
+    "en": "Could you take a look when you get a chance?",
+    "vi": "Khi nào rảnh bạn xem giúp được không?",
+    "highlights": ["take a look", "when you get a chance"],
+    "note": "Nhờ vả lịch sự, không thúc ép. 'when you get a chance' = khi nào tiện.",
+    "tags": ["chat", "request"]
+  },
+  {
+    "id": "mail-003",
+    "topicId": "email-chat",
+    "en": "I've attached the screenshots and logs for reference.",
+    "vi": "Tôi đã đính kèm ảnh chụp màn hình và log để bạn tham khảo.",
+    "highlights": ["attached", "for reference"],
+    "note": "Câu chuẩn khi gửi kèm file trong email/bug report. 'for reference' = để tham khảo.",
+    "tags": ["email", "report"]
+  },
+  {
+    "id": "mail-004",
+    "topicId": "email-chat",
+    "en": "Let me know if you need any more details.",
+    "vi": "Cứ báo tôi nếu bạn cần thêm chi tiết.",
+    "highlights": ["Let me know", "any more details"],
+    "note": "Câu kết thân thiện, mở đường cho người nhận hỏi thêm.",
+    "tags": ["email", "chat"]
+  },
+  {
+    "id": "mail-005",
+    "topicId": "email-chat",
+    "en": "I'll follow up with the dev team and keep you posted.",
+    "vi": "Tôi sẽ theo sát với team dev và cập nhật cho bạn.",
+    "highlights": ["follow up", "keep you posted"],
+    "note": "'follow up' = theo dõi/đeo bám việc. 'keep you posted' = cập nhật tình hình sau.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-006",
+    "topicId": "email-chat",
+    "en": "As discussed, I'll handle the regression testing today.",
+    "vi": "Như đã trao đổi, hôm nay tôi sẽ lo phần test hồi quy.",
+    "highlights": ["As discussed", "handle"],
+    "note": "'As discussed' = như đã bàn — mở đầu email xác nhận lại việc đã thống nhất.",
+    "tags": ["email", "confirm"]
+  },
+  {
+    "id": "mail-007",
+    "topicId": "email-chat",
+    "en": "Quick question — is the deadline still end of this week?",
+    "vi": "Hỏi nhanh chút — hạn chót vẫn là cuối tuần này đúng không?",
+    "highlights": ["Quick question", "deadline"],
+    "note": "'Quick question' = mở đầu khi hỏi nhanh trên chat, lịch sự và gọn.",
+    "tags": ["chat", "question"]
+  },
+  {
+    "id": "mail-008",
+    "topicId": "email-chat",
+    "en": "Apologies for the delay, I was tied up with another task.",
+    "vi": "Xin lỗi vì trả lời trễ, tôi bị bận một việc khác.",
+    "highlights": ["Apologies for the delay", "tied up"],
+    "note": "Xin lỗi lịch sự khi phản hồi muộn. 'tied up' = bận rộn, kẹt việc.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-009",
+    "topicId": "email-chat",
+    "en": "Just to confirm, we're releasing on Friday, right?",
+    "vi": "Cho chắc nhé, mình phát hành vào thứ Sáu đúng không?",
+    "highlights": ["Just to confirm", "releasing"],
+    "note": "'Just to confirm' = xác nhận lại cho chắc, tránh hiểu nhầm.",
+    "tags": ["chat", "confirm"]
+  },
+  {
+    "id": "mail-010",
+    "topicId": "email-chat",
+    "en": "Thanks in advance for your help.",
+    "vi": "Cảm ơn bạn trước nhé.",
+    "highlights": ["Thanks in advance"],
+    "note": "'Thanks in advance' = cảm ơn trước — kết email khi nhờ ai làm gì.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-011",
+    "topicId": "email-chat",
+    "en": "Hope you're doing well.",
+    "vi": "Hy vọng bạn vẫn khỏe.",
+    "highlights": ["Hope you're doing well"],
+    "note": "Câu mở đầu email lịch sự, phổ biến nhất khi viết cho người ngoài team.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-012",
+    "topicId": "email-chat",
+    "en": "Just checking in on the status of this.",
+    "vi": "Tôi hỏi thăm chút về tình hình việc này.",
+    "highlights": ["checking in", "status"],
+    "note": "'check in on something' = hỏi thăm/nhắc nhẹ tiến độ mà không thúc ép.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-013",
+    "topicId": "email-chat",
+    "en": "Quick update on my end.",
+    "vi": "Cập nhật nhanh từ phía tôi.",
+    "highlights": ["Quick update", "on my end"],
+    "note": "'on my end' = về phía tôi. Mở đầu khi báo tiến độ phần mình.",
+    "tags": ["chat", "update"]
+  },
+  {
+    "id": "mail-014",
+    "topicId": "email-chat",
+    "en": "Following up on my previous message.",
+    "vi": "Tôi nhắc lại tin nhắn trước của mình.",
+    "highlights": ["Following up", "previous message"],
+    "note": "Cách lịch sự để nhắc lại email/chat trước chưa được trả lời.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-015",
+    "topicId": "email-chat",
+    "en": "Sorry to chase, but is there any update?",
+    "vi": "Xin lỗi phải giục, nhưng có cập nhật gì chưa?",
+    "highlights": ["Sorry to chase", "any update"],
+    "note": "'chase' = giục/đòi cho xong. 'Sorry to chase' làm lời giục bớt gắt.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-016",
+    "topicId": "email-chat",
+    "en": "Could you confirm by end of day?",
+    "vi": "Bạn xác nhận giúp trong hôm nay được không?",
+    "highlights": ["confirm", "by end of day"],
+    "note": "'by end of day' (EOD) = trước hết ngày. Đặt hạn nhẹ nhàng.",
+    "tags": ["email", "request"]
+  },
+  {
+    "id": "mail-017",
+    "topicId": "email-chat",
+    "en": "Would it be possible to move this up?",
+    "vi": "Có thể đẩy việc này lên sớm hơn không?",
+    "highlights": ["move this up"],
+    "note": "'move up' = dời sớm hơn. 'Would it be possible to...' = cách hỏi rất lịch sự.",
+    "tags": ["email", "request"]
+  },
+  {
+    "id": "mail-018",
+    "topicId": "email-chat",
+    "en": "Can you loop in the dev team?",
+    "vi": "Bạn kéo team dev vào luôn được không?",
+    "highlights": ["loop in"],
+    "note": "'loop someone in' = thêm ai đó vào cuộc trao đổi/email để họ nắm thông tin.",
+    "tags": ["email", "request"]
+  },
+  {
+    "id": "mail-019",
+    "topicId": "email-chat",
+    "en": "Please find the details below.",
+    "vi": "Chi tiết bạn xem bên dưới nhé.",
+    "highlights": ["Please find", "below"],
+    "note": "Câu email trang trọng dẫn vào nội dung phía dưới.",
+    "tags": ["email"]
+  },
+  {
+    "id": "mail-020",
+    "topicId": "email-chat",
+    "en": "Let me know your thoughts.",
+    "vi": "Cho tôi biết ý bạn nhé.",
+    "highlights": ["your thoughts"],
+    "note": "'your thoughts' = suy nghĩ/ý kiến của bạn. Mời người nhận phản hồi.",
+    "tags": ["email", "chat"]
+  },
+  {
+    "id": "mail-021",
+    "topicId": "email-chat",
+    "en": "Could you double-check the numbers?",
+    "vi": "Bạn kiểm tra lại các con số giúp được không?",
+    "highlights": ["double-check"],
+    "note": "'double-check' = kiểm tra lại cho chắc. Lịch sự nhờ rà soát.",
+    "tags": ["chat", "request"]
+  },
+  {
+    "id": "mail-022",
+    "topicId": "email-chat",
+    "en": "Could you prioritize this one, please?",
+    "vi": "Bạn ưu tiên xử lý cái này giúp nhé?",
+    "highlights": ["prioritize"],
+    "note": "'prioritize' = ưu tiên làm trước. Dùng khi việc gấp.",
+    "tags": ["chat", "request"]
+  },
+  {
+    "id": "mail-023",
+    "topicId": "email-chat",
+    "en": "Noted, thanks.",
+    "vi": "Đã ghi nhận, cảm ơn.",
+    "highlights": ["Noted"],
+    "note": "'Noted' = đã ghi nhận/nắm rồi. Trả lời gọn khi nhận thông tin.",
+    "tags": ["chat", "reply"]
+  },
+  {
+    "id": "mail-024",
+    "topicId": "email-chat",
+    "en": "Will do, thanks for letting me know.",
+    "vi": "Tôi sẽ làm, cảm ơn đã báo.",
+    "highlights": ["Will do", "letting me know"],
+    "note": "'Will do' = sẽ làm ngay. 'letting me know' = đã báo cho tôi.",
+    "tags": ["chat", "reply"]
+  },
+  {
+    "id": "mail-025",
+    "topicId": "email-chat",
+    "en": "Sounds good, I'll proceed.",
+    "vi": "Ổn rồi, tôi tiến hành nhé.",
+    "highlights": ["proceed"],
+    "note": "'proceed' = tiến hành/làm tiếp. Xác nhận trước khi bắt tay làm.",
+    "tags": ["chat", "reply"]
+  },
+  {
+    "id": "mail-026",
+    "topicId": "email-chat",
+    "en": "Confirmed on my side.",
+    "vi": "Phía tôi đã xác nhận.",
+    "highlights": ["Confirmed"],
+    "note": "Xác nhận ngắn gọn rằng phần của mình đã ổn/đã chốt.",
+    "tags": ["chat", "confirm"]
+  },
+  {
+    "id": "mail-027",
+    "topicId": "email-chat",
+    "en": "Friday works for me.",
+    "vi": "Thứ Sáu thì hợp với tôi.",
+    "highlights": ["works for me"],
+    "note": "Cách chốt lịch hẹn nhanh. '(time) works for me' = thời điểm đó ổn với tôi.",
+    "tags": ["chat", "confirm"]
+  },
+  {
+    "id": "mail-028",
+    "topicId": "email-chat",
+    "en": "Got it, thanks for the clarification.",
+    "vi": "Hiểu rồi, cảm ơn đã nói rõ.",
+    "highlights": ["the clarification"],
+    "note": "'clarification' = lời giải thích cho rõ. Cảm ơn sau khi được làm rõ.",
+    "tags": ["chat", "reply"]
+  },
+  {
+    "id": "mail-029",
+    "topicId": "email-chat",
+    "en": "Are you available for a call tomorrow?",
+    "vi": "Mai bạn có rảnh để gọi không?",
+    "highlights": ["available for a call"],
+    "note": "'available' = rảnh/có mặt được. Hỏi lịch gọi lịch sự.",
+    "tags": ["email", "meeting"]
+  },
+  {
+    "id": "mail-030",
+    "topicId": "email-chat",
+    "en": "Let's schedule a quick sync.",
+    "vi": "Mình sắp xếp một buổi trao đổi nhanh nhé.",
+    "highlights": ["schedule", "quick sync"],
+    "note": "'schedule' = lên lịch. 'quick sync' = buổi trao đổi ngắn để cập nhật.",
+    "tags": ["email", "meeting"]
+  },
+  {
+    "id": "mail-031",
+    "topicId": "email-chat",
+    "en": "Can we reschedule to next week?",
+    "vi": "Mình dời lịch sang tuần sau được không?",
+    "highlights": ["reschedule"],
+    "note": "'reschedule' = đổi/dời lịch sang thời điểm khác.",
+    "tags": ["email", "meeting"]
+  },
+  {
+    "id": "mail-032",
+    "topicId": "email-chat",
+    "en": "I'll send a calendar invite.",
+    "vi": "Tôi sẽ gửi lời mời lịch họp.",
+    "highlights": ["calendar invite"],
+    "note": "'calendar invite' = lời mời họp gửi qua lịch (Google/Outlook).",
+    "tags": ["email", "meeting"]
+  },
+  {
+    "id": "mail-033",
+    "topicId": "email-chat",
+    "en": "Does 3 PM work for you?",
+    "vi": "3 giờ chiều có hợp với bạn không?",
+    "highlights": ["work for you"],
+    "note": "'Does (time) work for you?' = giờ đó có tiện cho bạn không? Hỏi chốt giờ.",
+    "tags": ["chat", "meeting"]
+  },
+  {
+    "id": "mail-034",
+    "topicId": "email-chat",
+    "en": "It's still in progress.",
+    "vi": "Việc này vẫn đang làm.",
+    "highlights": ["in progress"],
+    "note": "'in progress' = đang tiến hành, chưa xong. Báo trạng thái chuẩn.",
+    "tags": ["chat", "update"]
+  },
+  {
+    "id": "mail-035",
+    "topicId": "email-chat",
+    "en": "This is done on my end.",
+    "vi": "Phần của tôi xong rồi.",
+    "highlights": ["done on my end"],
+    "note": "Báo phần việc phía mình đã hoàn tất. 'on my end' = về phía tôi.",
+    "tags": ["chat", "update"]
+  },
+  {
+    "id": "mail-036",
+    "topicId": "email-chat",
+    "en": "I'm waiting on a reply from the client.",
+    "vi": "Tôi đang đợi khách trả lời.",
+    "highlights": ["waiting on", "reply"],
+    "note": "'waiting on someone' = chờ ai đó (phản hồi/hành động). Giải thích lý do trễ.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-037",
+    "topicId": "email-chat",
+    "en": "We're on track for Friday.",
+    "vi": "Mình vẫn đúng tiến độ cho thứ Sáu.",
+    "highlights": ["on track"],
+    "note": "'on track' = đúng tiến độ/đúng kế hoạch. Trấn an về deadline.",
+    "tags": ["chat", "update"]
+  },
+  {
+    "id": "mail-038",
+    "topicId": "email-chat",
+    "en": "There's a slight delay on this.",
+    "vi": "Việc này hơi bị trễ một chút.",
+    "highlights": ["slight delay"],
+    "note": "'slight delay' = trễ nhẹ. Báo trễ một cách nhẹ nhàng, chủ động.",
+    "tags": ["email", "update"]
+  },
+  {
+    "id": "mail-039",
+    "topicId": "email-chat",
+    "en": "I've attached the report for your review.",
+    "vi": "Tôi đã đính kèm báo cáo để bạn xem.",
+    "highlights": ["attached", "for your review"],
+    "note": "'for your review' = để bạn xem/duyệt. Câu chuẩn khi gửi tài liệu.",
+    "tags": ["email"]
+  },
+  {
+    "id": "mail-040",
+    "topicId": "email-chat",
+    "en": "See the screenshot below.",
+    "vi": "Xem ảnh chụp màn hình bên dưới nhé.",
+    "highlights": ["screenshot below"],
+    "note": "Dẫn người đọc tới ảnh đính kèm phía dưới. Ngắn gọn, hay dùng trên chat.",
+    "tags": ["chat"]
+  },
+  {
+    "id": "mail-041",
+    "topicId": "email-chat",
+    "en": "Here's the link to the document.",
+    "vi": "Đây là đường dẫn tới tài liệu.",
+    "highlights": ["Here's the link"],
+    "note": "Cách chia sẻ link gọn gàng trong chat/email.",
+    "tags": ["chat"]
+  },
+  {
+    "id": "mail-042",
+    "topicId": "email-chat",
+    "en": "Let me know if you have any questions.",
+    "vi": "Có thắc mắc gì cứ hỏi tôi nhé.",
+    "highlights": ["any questions"],
+    "note": "Câu kết email/chat thân thiện, mở đường cho người nhận hỏi thêm.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-043",
+    "topicId": "email-chat",
+    "en": "Looking forward to your reply.",
+    "vi": "Mong sớm nhận phản hồi của bạn.",
+    "highlights": ["Looking forward to"],
+    "note": "'Looking forward to + N/V-ing' = mong chờ điều gì. Câu kết email lịch sự.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-044",
+    "topicId": "email-chat",
+    "en": "Thanks for your patience.",
+    "vi": "Cảm ơn bạn đã kiên nhẫn chờ.",
+    "highlights": ["patience"],
+    "note": "Cảm ơn lịch sự khi mình bắt người ta chờ. 'patience' = sự kiên nhẫn.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-045",
+    "topicId": "email-chat",
+    "en": "Talk soon!",
+    "vi": "Nói chuyện sau nhé!",
+    "highlights": ["Talk soon"],
+    "note": "Câu chào kết thân mật trên chat, kiểu 'hẹn gặp/nói tiếp sau'.",
+    "tags": ["chat", "polite"]
+  },
+  {
+    "id": "mail-046",
+    "topicId": "email-chat",
+    "en": "Best regards,",
+    "vi": "Trân trọng,",
+    "highlights": ["Best regards"],
+    "note": "Cụm ký tên kết email trang trọng nhất. Viết trước tên mình.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-047",
+    "topicId": "email-chat",
+    "en": "Feel free to reach out anytime.",
+    "vi": "Cứ liên hệ tôi bất cứ lúc nào nhé.",
+    "highlights": ["reach out", "anytime"],
+    "note": "'reach out' = liên hệ/chủ động hỏi. Câu kết thân thiện, mở.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-048",
+    "topicId": "email-chat",
+    "en": "Apologies for the confusion.",
+    "vi": "Xin lỗi vì gây nhầm lẫn.",
+    "highlights": ["Apologies for the confusion"],
+    "note": "Xin lỗi lịch sự khi thông tin trước gây hiểu nhầm.",
+    "tags": ["email", "polite"]
+  },
+  {
+    "id": "mail-049",
+    "topicId": "email-chat",
+    "en": "Just flagging this as urgent.",
+    "vi": "Tôi đánh dấu việc này là gấp nhé.",
+    "highlights": ["flagging", "urgent"],
+    "note": "'flag something' = nêu/đánh dấu để gây chú ý. 'urgent' = gấp.",
+    "tags": ["chat", "report"]
+  },
+  {
+    "id": "mail-050",
+    "topicId": "email-chat",
+    "en": "Thanks for the quick turnaround.",
+    "vi": "Cảm ơn bạn đã xử lý nhanh.",
+    "highlights": ["quick turnaround"],
+    "note": "'turnaround' = thời gian hoàn thành/xử lý. 'quick turnaround' = làm xong nhanh.",
+    "tags": ["email", "polite"]
+  }
+]

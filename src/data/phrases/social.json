@@ -1,0 +1,452 @@
+[
+  {
+    "id": "soc-001",
+    "topicId": "social",
+    "en": "How's it going?",
+    "vi": "Dạo này thế nào?",
+    "highlights": ["How's it going"],
+    "note": "Câu chào thân mật, thay cho 'How are you'.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-002",
+    "topicId": "social",
+    "en": "Long time no see, how have you been?",
+    "vi": "Lâu rồi không gặp, dạo này bạn sao rồi?",
+    "highlights": ["Long time no see", "how have you been"],
+    "note": "Gặp lại người quen sau thời gian dài.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-003",
+    "topicId": "social",
+    "en": "What do you do for fun on weekends?",
+    "vi": "Cuối tuần bạn thường làm gì để thư giãn?",
+    "highlights": ["for fun", "weekends"],
+    "note": "Câu small talk mở đầu trò chuyện.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-004",
+    "topicId": "social",
+    "en": "That sounds great, count me in!",
+    "vi": "Nghe hay đấy, cho tôi tham gia với!",
+    "highlights": ["sounds great", "count me in"],
+    "note": "'count me in' = cho tôi tham gia. Nhận lời rủ rê.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-005",
+    "topicId": "social",
+    "en": "Maybe next time, I'm a bit tied up today.",
+    "vi": "Để lần sau nhé, hôm nay tôi hơi bận.",
+    "highlights": ["next time", "tied up"],
+    "note": "'tied up' = bận rộn. Cách từ chối lịch sự.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-006",
+    "topicId": "social",
+    "en": "It was nice talking to you.",
+    "vi": "Rất vui được trò chuyện với bạn.",
+    "highlights": ["nice talking to you"],
+    "note": "Câu kết thúc cuộc trò chuyện lịch sự.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-007",
+    "topicId": "social",
+    "en": "No worries, take your time.",
+    "vi": "Không sao đâu, cứ từ từ.",
+    "highlights": ["take your time"],
+    "note": "'take your time' = cứ thong thả, không vội.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-008",
+    "topicId": "social",
+    "en": "Could you do me a favor?",
+    "vi": "Bạn giúp tôi một việc được không?",
+    "highlights": ["do me a favor"],
+    "note": "'do someone a favor' = giúp ai một việc.",
+    "tags": ["request"]
+  },
+  {
+    "id": "soc-009",
+    "topicId": "social",
+    "en": "Let's grab a coffee sometime.",
+    "vi": "Khi nào mình đi cà phê nhé.",
+    "highlights": ["grab a coffee"],
+    "note": "'grab a coffee' = đi uống cà phê (thân mật).",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-010",
+    "topicId": "social",
+    "en": "I really appreciate it, thanks a lot.",
+    "vi": "Tôi thật sự cảm kích, cảm ơn nhiều.",
+    "highlights": ["appreciate it", "thanks a lot"],
+    "note": "Cảm ơn chân thành sau khi được giúp.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-011",
+    "topicId": "social",
+    "en": "What have you been up to?",
+    "vi": "Dạo này bạn làm gì rồi?",
+    "highlights": ["been up to"],
+    "note": "'be up to' = đang làm/bận gì. Câu hỏi thăm thân mật.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-012",
+    "topicId": "social",
+    "en": "Not much, just the usual.",
+    "vi": "Không có gì, vẫn như mọi khi thôi.",
+    "highlights": ["the usual"],
+    "note": "'the usual' = mấy việc thường ngày. Câu trả lời quen thuộc khi được hỏi thăm.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-013",
+    "topicId": "social",
+    "en": "How was your weekend?",
+    "vi": "Cuối tuần của bạn thế nào?",
+    "highlights": ["How was your weekend"],
+    "note": "Câu small talk kinh điển đầu tuần ở văn phòng.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-014",
+    "topicId": "social",
+    "en": "Any plans for the weekend?",
+    "vi": "Cuối tuần có dự định gì không?",
+    "highlights": ["plans for the weekend"],
+    "note": "Hỏi kế hoạch cuối tuần — mở đầu trò chuyện cuối tuần.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-015",
+    "topicId": "social",
+    "en": "The weather's been crazy lately.",
+    "vi": "Dạo này thời tiết thất thường ghê.",
+    "highlights": ["weather's been crazy"],
+    "note": "Nói chuyện thời tiết — chủ đề small talk an toàn nhất.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-016",
+    "topicId": "social",
+    "en": "It's freezing today.",
+    "vi": "Hôm nay lạnh cóng luôn.",
+    "highlights": ["freezing"],
+    "note": "'freezing' = lạnh buốt. Ngược lại 'boiling' = nóng kinh khủng.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-017",
+    "topicId": "social",
+    "en": "Have you had lunch yet?",
+    "vi": "Bạn ăn trưa chưa?",
+    "highlights": ["had lunch yet"],
+    "note": "Câu hỏi thăm gần gũi, mở đường rủ ăn chung.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-018",
+    "topicId": "social",
+    "en": "Do you want to grab lunch together?",
+    "vi": "Mình đi ăn trưa chung không?",
+    "highlights": ["grab lunch"],
+    "note": "'grab lunch' = đi ăn trưa (thân mật, nhanh gọn).",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-019",
+    "topicId": "social",
+    "en": "I'm starving.",
+    "vi": "Tôi đói meo rồi.",
+    "highlights": ["starving"],
+    "note": "'starving' = đói lả (nói quá cho vui). Mạnh hơn 'hungry'.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-020",
+    "topicId": "social",
+    "en": "This place is really nice.",
+    "vi": "Chỗ này đẹp thật đấy.",
+    "highlights": ["really nice"],
+    "note": "Khen quán/địa điểm — câu small talk khi đi ăn/cà phê chung.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-021",
+    "topicId": "social",
+    "en": "Let's catch up sometime.",
+    "vi": "Khi nào mình gặp hàn huyên nhé.",
+    "highlights": ["catch up"],
+    "note": "'catch up' = gặp lại cập nhật tình hình nhau. Lời hẹn thân mật.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-022",
+    "topicId": "social",
+    "en": "It's been a while!",
+    "vi": "Lâu rồi mới gặp ha!",
+    "highlights": ["been a while"],
+    "note": "'It's been a while' = lâu rồi đấy — chào khi lâu không gặp.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-023",
+    "topicId": "social",
+    "en": "Take care!",
+    "vi": "Giữ gìn sức khỏe nhé!",
+    "highlights": ["Take care"],
+    "note": "Câu chào tạm biệt ấm áp, dùng được với hầu hết mọi người.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-024",
+    "topicId": "social",
+    "en": "Have a good one!",
+    "vi": "Chúc một ngày tốt lành nhé!",
+    "highlights": ["Have a good one"],
+    "note": "'Have a good one' = chúc bạn (một ngày) vui — câu chào tạm biệt thân thiện.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-025",
+    "topicId": "social",
+    "en": "See you around.",
+    "vi": "Hẹn gặp lại nhé.",
+    "highlights": ["See you around"],
+    "note": "Tạm biệt nhẹ nhàng, kiểu 'lúc nào đó gặp lại'.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-026",
+    "topicId": "social",
+    "en": "Have a safe trip!",
+    "vi": "Đi đường bình an nhé!",
+    "highlights": ["safe trip"],
+    "note": "Lời chúc khi ai đó sắp đi xa/đi công tác.",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-027",
+    "topicId": "social",
+    "en": "Get well soon.",
+    "vi": "Mau khỏe lại nhé.",
+    "highlights": ["Get well soon"],
+    "note": "Lời chúc khi đồng nghiệp/bạn bị ốm.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-028",
+    "topicId": "social",
+    "en": "Congratulations, you deserve it!",
+    "vi": "Chúc mừng nhé, bạn xứng đáng mà!",
+    "highlights": ["Congratulations", "you deserve it"],
+    "note": "'you deserve it' = bạn xứng đáng. Lời chúc mừng chân thành.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-029",
+    "topicId": "social",
+    "en": "Happy birthday! Have a great one.",
+    "vi": "Chúc mừng sinh nhật! Chúc một ngày thật vui.",
+    "highlights": ["Happy birthday"],
+    "note": "Chúc sinh nhật. 'Have a great one' = chúc (ngày) thật tuyệt.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-030",
+    "topicId": "social",
+    "en": "Good luck with that!",
+    "vi": "Chúc may mắn nhé!",
+    "highlights": ["Good luck"],
+    "note": "Chúc may mắn khi ai đó sắp làm việc gì khó.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-031",
+    "topicId": "social",
+    "en": "No problem at all.",
+    "vi": "Không vấn đề gì đâu.",
+    "highlights": ["No problem at all"],
+    "note": "Đáp lại lời cảm ơn/xin lỗi một cách thoải mái.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-032",
+    "topicId": "social",
+    "en": "Don't mention it.",
+    "vi": "Có gì đâu mà.",
+    "highlights": ["Don't mention it"],
+    "note": "'Don't mention it' = chuyện nhỏ/đừng khách sáo — đáp lại lời cảm ơn.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-033",
+    "topicId": "social",
+    "en": "My pleasure.",
+    "vi": "Rất hân hạnh.",
+    "highlights": ["My pleasure"],
+    "note": "Đáp lời cảm ơn lịch sự, ấm áp — kiểu 'tôi vui được giúp'.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-034",
+    "topicId": "social",
+    "en": "That's so kind of you.",
+    "vi": "Bạn tốt quá đi.",
+    "highlights": ["so kind of you"],
+    "note": "Khen/cảm ơn khi ai đó tử tế với mình.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-035",
+    "topicId": "social",
+    "en": "Sorry to keep you waiting.",
+    "vi": "Xin lỗi đã để bạn đợi.",
+    "highlights": ["keep you waiting"],
+    "note": "Xin lỗi lịch sự khi mình tới trễ hoặc làm ai phải chờ.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-036",
+    "topicId": "social",
+    "en": "It happens, don't worry about it.",
+    "vi": "Chuyện thường mà, đừng lo.",
+    "highlights": ["don't worry about it"],
+    "note": "An ủi khi người khác lỡ sai/xin lỗi. 'It happens' = chuyện ai cũng gặp.",
+    "tags": ["reply"]
+  },
+  {
+    "id": "soc-037",
+    "topicId": "social",
+    "en": "I totally agree.",
+    "vi": "Tôi hoàn toàn đồng ý.",
+    "highlights": ["totally agree"],
+    "note": "Đồng tình mạnh mẽ. 'totally' = hoàn toàn.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-038",
+    "topicId": "social",
+    "en": "Same to you!",
+    "vi": "Bạn cũng vậy nhé!",
+    "highlights": ["Same to you"],
+    "note": "Đáp lại một lời chúc (vd 'Have a nice day!' → 'Same to you!').",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "soc-039",
+    "topicId": "social",
+    "en": "That sounds fun!",
+    "vi": "Nghe vui đấy!",
+    "highlights": ["sounds fun"],
+    "note": "Hưởng ứng một đề xuất/kế hoạch một cách hào hứng.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-040",
+    "topicId": "social",
+    "en": "I'm not really into that.",
+    "vi": "Tôi không khoái cái đó lắm.",
+    "highlights": ["not really into"],
+    "note": "'be into something' = thích/mê cái gì. Cách từ chối nhẹ nhàng sở thích.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-041",
+    "topicId": "social",
+    "en": "Maybe some other time.",
+    "vi": "Để dịp khác vậy.",
+    "highlights": ["some other time"],
+    "note": "Từ chối lời rủ một cách lịch sự, để ngỏ lần sau.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-042",
+    "topicId": "social",
+    "en": "I'd love to, thanks for inviting me.",
+    "vi": "Tôi rất muốn, cảm ơn đã rủ tôi.",
+    "highlights": ["love to", "inviting me"],
+    "note": "Nhận lời rủ một cách vui vẻ, lịch sự.",
+    "tags": ["invitation"]
+  },
+  {
+    "id": "soc-043",
+    "topicId": "social",
+    "en": "How's the family?",
+    "vi": "Gia đình bạn vẫn khỏe chứ?",
+    "highlights": ["How's the family"],
+    "note": "Hỏi thăm gia đình — thể hiện sự quan tâm khi nói chuyện.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-044",
+    "topicId": "social",
+    "en": "Tell me about it.",
+    "vi": "Đúng vậy đó, không phải mình bạn đâu.",
+    "highlights": ["Tell me about it"],
+    "note": "'Tell me about it' = (đồng cảm) đúng vậy đó, tôi cũng thấy thế — KHÔNG phải nghĩa 'kể tôi nghe'.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-045",
+    "topicId": "social",
+    "en": "What do you think of this place?",
+    "vi": "Bạn thấy chỗ này thế nào?",
+    "highlights": ["What do you think of"],
+    "note": "Hỏi ý kiến/cảm nhận của người kia về một nơi, một thứ gì đó.",
+    "tags": ["small talk"]
+  },
+  {
+    "id": "soc-046",
+    "topicId": "social",
+    "en": "Can I get the bill, please?",
+    "vi": "Cho tôi xin hóa đơn nhé?",
+    "highlights": ["the bill"],
+    "note": "'the bill' = hóa đơn (Anh-Anh). Anh-Mỹ hay nói 'the check'. Dùng khi tính tiền.",
+    "tags": ["đời sống"]
+  },
+  {
+    "id": "soc-047",
+    "topicId": "social",
+    "en": "Do you accept card?",
+    "vi": "Ở đây nhận thẻ không?",
+    "highlights": ["accept card"],
+    "note": "Hỏi nơi bán có thanh toán bằng thẻ không. 'card' = thẻ ngân hàng.",
+    "tags": ["đời sống"]
+  },
+  {
+    "id": "soc-048",
+    "topicId": "social",
+    "en": "Keep the change.",
+    "vi": "Khỏi thối lại nhé.",
+    "highlights": ["Keep the change"],
+    "note": "'change' = tiền thừa/thối lại. Câu này = cứ giữ tiền thừa (tip).",
+    "tags": ["đời sống"]
+  },
+  {
+    "id": "soc-049",
+    "topicId": "social",
+    "en": "I'm just looking, thanks.",
+    "vi": "Tôi chỉ xem thôi, cảm ơn.",
+    "highlights": ["just looking"],
+    "note": "Câu cửa miệng khi vào cửa hàng mà chưa muốn mua, nhân viên hỏi.",
+    "tags": ["đời sống"]
+  },
+  {
+    "id": "soc-050",
+    "topicId": "social",
+    "en": "Let's keep in touch.",
+    "vi": "Mình giữ liên lạc nhé.",
+    "highlights": ["keep in touch"],
+    "note": "'keep in touch' = giữ liên lạc. Câu chia tay khi muốn duy trì quan hệ.",
+    "tags": ["greeting"]
+  }
+]

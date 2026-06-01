@@ -1,0 +1,452 @@
+[
+  {
+    "id": "conn-001",
+    "topicId": "connectors",
+    "en": "I mean, what I'm trying to say is it's not a real bug.",
+    "vi": "Ý là, cái tôi muốn nói là nó không phải lỗi thật.",
+    "highlights": ["I mean", "what I'm trying to say is"],
+    "note": "'I mean...' = ý là... — câu giờ kinh điển để nói lại cho rõ. Rất tự nhiên khi đang tìm cách diễn đạt.",
+    "tags": ["filler", "câu giờ"]
+  },
+  {
+    "id": "conn-002",
+    "topicId": "connectors",
+    "en": "Let me think for a second.",
+    "vi": "Để tôi nghĩ một chút.",
+    "highlights": ["Let me think", "for a second"],
+    "note": "Câu giờ lịch sự khi cần thời gian suy nghĩ — nói câu này thay vì im lặng để khỏi bị khựng.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-003",
+    "topicId": "connectors",
+    "en": "How should I put it?",
+    "vi": "Nói sao cho đúng nhỉ?",
+    "highlights": ["How should I put it"],
+    "note": "Câu giờ cực tự nhiên khi đang bí từ. Người bản ngữ dùng suốt để câu thêm vài giây suy nghĩ.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-004",
+    "topicId": "connectors",
+    "en": "It's kind of like a temporary fix.",
+    "vi": "Nó giống như là một bản vá tạm vậy.",
+    "highlights": ["kind of like"],
+    "note": "'kind of like' = giống như là — dùng khi diễn đạt áng chừng, không cần chính xác 100%.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-005",
+    "en": "But then again, we could just wait for the next release.",
+    "topicId": "connectors",
+    "vi": "Nhưng mà, mình cũng có thể đợi bản phát hành sau.",
+    "highlights": ["But then again"],
+    "note": "'But then again' = nhưng mà (nghĩ lại thì) — chuyển sang ý ngược lại một cách mượt mà.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-006",
+    "topicId": "connectors",
+    "en": "Usually I run the smoke tests first.",
+    "vi": "Thường thì tôi chạy smoke test trước.",
+    "highlights": ["Usually"],
+    "note": "'Usually' = thường thì — mở đầu khi kể thói quen hoặc việc hay làm.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-007",
+    "topicId": "connectors",
+    "en": "If you ask me, this is a blocker.",
+    "vi": "Theo tôi thì cái này là blocker.",
+    "highlights": ["If you ask me"],
+    "note": "'If you ask me' = theo tôi thì — nghe tự nhiên hơn 'In my opinion', dùng khi nêu quan điểm.",
+    "tags": ["từ nối", "ý kiến"]
+  },
+  {
+    "id": "conn-008",
+    "topicId": "connectors",
+    "en": "I'm not sure, but I think it's a caching issue.",
+    "vi": "Tôi không chắc, nhưng tôi nghĩ là do cache.",
+    "highlights": ["I'm not sure, but"],
+    "note": "'I'm not sure, but...' = tôi không chắc nhưng — rào trước rồi mới đoán, an toàn và lịch sự.",
+    "tags": ["từ nối", "rào trước"]
+  },
+  {
+    "id": "conn-009",
+    "topicId": "connectors",
+    "en": "I'd say it takes about two days.",
+    "vi": "Tôi nghĩ là mất khoảng hai ngày.",
+    "highlights": ["I'd say"],
+    "note": "'I'd say...' = tôi nghĩ là/tôi cho là — đưa ra ước lượng hoặc ý kiến một cách nhẹ nhàng.",
+    "tags": ["từ nối", "ý kiến"]
+  },
+  {
+    "id": "conn-010",
+    "topicId": "connectors",
+    "en": "Well, it depends on the environment.",
+    "vi": "À, cái đó còn tùy môi trường.",
+    "highlights": ["Well", "it depends"],
+    "note": "'Well...' = à... — mở đầu câu trả lời để có nhịp suy nghĩ. 'it depends' = còn tùy.",
+    "tags": ["filler", "câu giờ"]
+  },
+  {
+    "id": "conn-011",
+    "topicId": "connectors",
+    "en": "Let me check real quick.",
+    "vi": "Để tôi check nhanh cái đã.",
+    "highlights": ["Let me check", "real quick"],
+    "note": "Câu cửa miệng của em 'để tôi check'. 'real quick' = nhanh thôi — nghe rất đời thường.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-012",
+    "topicId": "connectors",
+    "en": "Give me a second, I'm still looking into it.",
+    "vi": "Cho tôi chút, tôi vẫn đang xem cái này.",
+    "highlights": ["Give me a second", "looking into it"],
+    "note": "'looking into it' = đang tìm hiểu/xem xét. Câu giờ khi mình đang xử lý mà chưa có câu trả lời.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-013",
+    "topicId": "connectors",
+    "en": "Same here, I ran into that too.",
+    "vi": "Em cũng vậy, tôi cũng gặp lỗi đó.",
+    "highlights": ["Same here", "ran into that"],
+    "note": "'Same here' = em cũng vậy. 'ran into' = gặp phải (lỗi/vấn đề). Đồng tình nhanh gọn.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-014",
+    "topicId": "connectors",
+    "en": "To be honest, I haven't tested that part yet.",
+    "vi": "Thành thật mà nói, phần đó tôi chưa test.",
+    "highlights": ["To be honest"],
+    "note": "'To be honest' = thật ra/thành thật mà nói — câu mở rất tự nhiên, cũng là một kiểu câu giờ.",
+    "tags": ["từ nối", "câu giờ"]
+  },
+  {
+    "id": "conn-015",
+    "topicId": "connectors",
+    "en": "The thing is, we're running out of time.",
+    "vi": "Vấn đề là, mình sắp hết giờ rồi.",
+    "highlights": ["The thing is", "running out of time"],
+    "note": "'The thing is...' = vấn đề là/chuyện là — mở đầu khi nêu vấn đề. 'running out of time' = sắp hết giờ.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-016",
+    "topicId": "connectors",
+    "en": "Anyway, let's move on for now.",
+    "vi": "Thôi, mình tiếp tục đã nhé.",
+    "highlights": ["Anyway", "move on"],
+    "note": "'Anyway' = thôi/dù sao thì — dùng để chốt lại và chuyển sang chuyện khác.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-017",
+    "topicId": "connectors",
+    "en": "You know what I mean?",
+    "vi": "Bạn hiểu ý tôi chứ?",
+    "highlights": ["You know what I mean"],
+    "note": "Câu chêm kiểm tra người nghe có theo kịp không, cũng là cách câu giờ.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-018",
+    "topicId": "connectors",
+    "en": "Like I said, we should test it first.",
+    "vi": "Như tôi đã nói, mình nên test trước.",
+    "highlights": ["Like I said"],
+    "note": "'Like I said' = như tôi đã nói — nhắc lại ý mình, vừa nối vừa nhấn mạnh.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-019",
+    "topicId": "connectors",
+    "en": "At the end of the day, quality matters most.",
+    "vi": "Rốt cuộc thì chất lượng vẫn là quan trọng nhất.",
+    "highlights": ["At the end of the day"],
+    "note": "'At the end of the day' = rốt cuộc/nói cho cùng — dẫn vào kết luận quan trọng.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-020",
+    "topicId": "connectors",
+    "en": "More or less.",
+    "vi": "Đại khái vậy.",
+    "highlights": ["More or less"],
+    "note": "'More or less' = đại khái, gần như vậy — trả lời ước chừng.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-021",
+    "topicId": "connectors",
+    "en": "Something like that.",
+    "vi": "Đại loại vậy.",
+    "highlights": ["Something like that"],
+    "note": "Chốt một mô tả không cần chính xác tuyệt đối. Rất hay dùng khi nói.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-022",
+    "topicId": "connectors",
+    "en": "Let me put it this way.",
+    "vi": "Để tôi nói theo cách này nhé.",
+    "highlights": ["Let me put it this way"],
+    "note": "Dẫn vào một cách diễn đạt khác cho dễ hiểu, đồng thời câu giờ suy nghĩ.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-023",
+    "topicId": "connectors",
+    "en": "Off the top of my head, around ten.",
+    "vi": "Nhớ sơ sơ thì khoảng mười.",
+    "highlights": ["Off the top of my head"],
+    "note": "'Off the top of my head' = nhớ/đoán ngay chưa kiểm tra kỹ. Rất bản ngữ.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-024",
+    "topicId": "connectors",
+    "en": "Hold on, let me think.",
+    "vi": "Khoan đã, để tôi nghĩ.",
+    "highlights": ["Hold on"],
+    "note": "'Hold on' = khoan, chờ chút — câu giờ khi cần dừng lại suy nghĩ.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-025",
+    "topicId": "connectors",
+    "en": "Actually, now that I think about it, you're right.",
+    "vi": "À, giờ nghĩ lại thì bạn đúng đấy.",
+    "highlights": ["now that I think about it"],
+    "note": "'now that I think about it' = giờ nghĩ lại thì — đổi/điều chỉnh ý vừa nói.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-026",
+    "topicId": "connectors",
+    "en": "By the way, did you see my message?",
+    "vi": "À mà, bạn thấy tin nhắn của tôi chưa?",
+    "highlights": ["By the way"],
+    "note": "'By the way' = à mà/nhân tiện — chêm thêm chuyện mới vào.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-027",
+    "topicId": "connectors",
+    "en": "Speaking of which, how's the testing going?",
+    "vi": "Nhân nói tới chuyện đó, việc test sao rồi?",
+    "highlights": ["Speaking of which"],
+    "note": "'Speaking of which' = nhân nói tới chuyện đó — bắt sang chủ đề liên quan.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-028",
+    "topicId": "connectors",
+    "en": "That said, it's still a bit risky.",
+    "vi": "Dù vậy, vẫn hơi rủi ro đấy.",
+    "highlights": ["That said"],
+    "note": "'That said' = dù vậy/tuy nhiên — chuyển sang ý ngược lại sau khi vừa công nhận điều gì.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-029",
+    "topicId": "connectors",
+    "en": "On the other hand, it saves us time.",
+    "vi": "Mặt khác, nó giúp mình tiết kiệm thời gian.",
+    "highlights": ["On the other hand"],
+    "note": "'On the other hand' = mặt khác — nêu khía cạnh đối lập để cân nhắc.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-030",
+    "topicId": "connectors",
+    "en": "For example, the login page is broken.",
+    "vi": "Ví dụ như trang đăng nhập đang lỗi.",
+    "highlights": ["For example"],
+    "note": "'For example' = ví dụ — dẫn ra dẫn chứng cho ý vừa nói.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-031",
+    "topicId": "connectors",
+    "en": "In other words, we have to start over.",
+    "vi": "Nói cách khác, mình phải làm lại từ đầu.",
+    "highlights": ["In other words"],
+    "note": "'In other words' = nói cách khác — diễn đạt lại cho rõ hơn.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-032",
+    "topicId": "connectors",
+    "en": "To sum up, we're on track.",
+    "vi": "Tóm lại, mình vẫn đúng tiến độ.",
+    "highlights": ["To sum up"],
+    "note": "'To sum up' = tóm lại — dẫn vào câu kết/tổng kết.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-033",
+    "topicId": "connectors",
+    "en": "First of all, let's check the logs.",
+    "vi": "Trước hết, mình xem log đã.",
+    "highlights": ["First of all"],
+    "note": "'First of all' = trước hết/đầu tiên là — mở đầu khi liệt kê các bước.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-034",
+    "topicId": "connectors",
+    "en": "After that, I'll run the tests.",
+    "vi": "Sau đó, tôi sẽ chạy test.",
+    "highlights": ["After that"],
+    "note": "'After that' = sau đó — nối các bước theo trình tự.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-035",
+    "topicId": "connectors",
+    "en": "In the meantime, let's keep testing.",
+    "vi": "Trong lúc đó, mình cứ tiếp tục test.",
+    "highlights": ["In the meantime"],
+    "note": "'In the meantime' = trong lúc chờ/trong khi đó — việc làm xen kẽ.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-036",
+    "topicId": "connectors",
+    "en": "As far as I know, it's already fixed.",
+    "vi": "Theo tôi biết thì nó đã được sửa rồi.",
+    "highlights": ["As far as I know"],
+    "note": "'As far as I know' = theo tôi biết — rào trước rằng thông tin có thể chưa đầy đủ.",
+    "tags": ["từ nối", "rào trước"]
+  },
+  {
+    "id": "conn-037",
+    "topicId": "connectors",
+    "en": "Either way, we should test it.",
+    "vi": "Kiểu gì thì mình cũng nên test.",
+    "highlights": ["Either way"],
+    "note": "'Either way' = đằng nào/kiểu gì cũng — dù chọn cách nào kết luận vẫn vậy.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-038",
+    "topicId": "connectors",
+    "en": "Sort of, yeah.",
+    "vi": "Cũng tạm vậy, ừ.",
+    "highlights": ["Sort of"],
+    "note": "'Sort of' = đại loại/cũng tạm — trả lời nửa vời, không hẳn 100%.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-039",
+    "topicId": "connectors",
+    "en": "Does that make sense?",
+    "vi": "Vậy có dễ hiểu không?",
+    "highlights": ["make sense"],
+    "note": "Hỏi lại xem người nghe có hiểu ý mình không — lịch sự và tự nhiên.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-040",
+    "topicId": "connectors",
+    "en": "I guess so.",
+    "vi": "Chắc vậy.",
+    "highlights": ["I guess so"],
+    "note": "'I guess so' = chắc vậy/cũng được — đồng ý một cách không chắc chắn lắm.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-041",
+    "topicId": "connectors",
+    "en": "Let's see, where should I start?",
+    "vi": "Để xem nào, nên bắt đầu từ đâu nhỉ?",
+    "highlights": ["Let's see"],
+    "note": "'Let's see' = để xem nào — câu giờ trong lúc sắp xếp ý nghĩ.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-042",
+    "topicId": "connectors",
+    "en": "Um, give me a moment.",
+    "vi": "Ừm, cho tôi chút.",
+    "highlights": ["give me a moment"],
+    "note": "'Um' + 'give me a moment' — câu giờ rất tự nhiên khi cần vài giây.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-043",
+    "topicId": "connectors",
+    "en": "How do I say this...",
+    "vi": "Nói cái này sao nhỉ...",
+    "highlights": ["How do I say this"],
+    "note": "Câu giờ khi đang loay hoay tìm cách diễn đạt — bản ngữ dùng rất nhiều.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-044",
+    "topicId": "connectors",
+    "en": "What's the word... right, deadline.",
+    "vi": "Từ gì ấy nhỉ... à, deadline.",
+    "highlights": ["What's the word"],
+    "note": "'What's the word...' = từ gì ấy nhỉ — câu giờ khi quên/đang tìm từ.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "conn-045",
+    "topicId": "connectors",
+    "en": "Basically, it just doesn't work.",
+    "vi": "Về cơ bản thì nó không chạy.",
+    "highlights": ["Basically"],
+    "note": "'Basically' = về cơ bản — mở đầu khi tóm gọn vấn đề.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-046",
+    "topicId": "connectors",
+    "en": "In short, we need more time.",
+    "vi": "Nói ngắn gọn, mình cần thêm thời gian.",
+    "highlights": ["In short"],
+    "note": "'In short' = nói ngắn gọn — dẫn vào tóm tắt nhanh.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-047",
+    "topicId": "connectors",
+    "en": "Long story short, the deploy failed.",
+    "vi": "Nói tóm lại, bản deploy bị lỗi.",
+    "highlights": ["Long story short"],
+    "note": "'Long story short' = chuyện dài kể ngắn/tóm lại — bỏ qua chi tiết, vào thẳng kết quả.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-048",
+    "topicId": "connectors",
+    "en": "Just so you know, the deadline moved up.",
+    "vi": "Nói để bạn biết, hạn chót bị đẩy sớm lên.",
+    "highlights": ["Just so you know"],
+    "note": "'Just so you know' = nói để bạn biết — báo trước một thông tin.",
+    "tags": ["từ nối"]
+  },
+  {
+    "id": "conn-049",
+    "topicId": "connectors",
+    "en": "It's a bit slow, if that makes sense.",
+    "vi": "Nó hơi chậm, không biết nói vậy bạn có hiểu không.",
+    "highlights": ["if that makes sense"],
+    "note": "'if that makes sense' = (nói vậy) không biết có dễ hiểu không — câu chêm cuối câu rất tự nhiên.",
+    "tags": ["filler"]
+  },
+  {
+    "id": "conn-050",
+    "topicId": "connectors",
+    "en": "So yeah, that's about it.",
+    "vi": "Ừ thì, đại khái là vậy.",
+    "highlights": ["that's about it"],
+    "note": "'that's about it' = đại khái là vậy/hết rồi — câu chốt khi kết thúc trình bày.",
+    "tags": ["từ nối"]
+  }
+]

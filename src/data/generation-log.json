@@ -1,0 +1,24 @@
+{
+  "_note": "SỔ THEO DÕI GENERATE — chỉ trợ lý AI (thầy) ghi file này mỗi lần 'generate'. KHÔNG sửa bằng tay. Form /habits KHÔNG đụng tới file này. Mục đích: nhớ phần kho /habits đã xử lý lần trước, để lần sau CHỈ lấy phần MỚI và không gen trùng.",
+  "lastProcessedProfile": {
+    "fillers": "ý là, à, giống như là, nhưng mà, thường thì, tôi không biết, theo tôi thì",
+    "dailyLines": "để tôi check, tôi nghĩ là, em cũng,",
+    "personality": "tính cách nói chậm chạp, vừa nói vừa suy nghĩ,nên sài từ nối khá nhiều khi nói tiếng việt, và chuyển qua tiếng anh thì lại chẳng thuộc nhiều từ nối nên chẳng nói được",
+    "stuckSituations": "Tôi không nghe được họ nói gì nên chẳng biết trả lời sao"
+  },
+  "runs": [
+    {
+      "at": "2026-06-01",
+      "fromFields": ["fillers", "dailyLines", "personality", "stuckSituations"],
+      "addedTopics": ["connectors", "clarify"],
+      "addedPhraseIds": [
+        "conn-001", "conn-002", "conn-003", "conn-004", "conn-005", "conn-006",
+        "conn-007", "conn-008", "conn-009", "conn-010", "conn-011", "conn-012",
+        "conn-013", "conn-014", "conn-015", "conn-016",
+        "clar-001", "clar-002", "clar-003", "clar-004", "clar-005",
+        "clar-006", "clar-007", "clar-008", "clar-009", "clar-010"
+      ],
+      "note": "Đợt đầu. Tập trung chữa gốc: từ nối + câu giờ (vì em nói chậm, vừa nói vừa nghĩ) và câu xử lý khi nghe không kịp."
+    }
+  ]
+}

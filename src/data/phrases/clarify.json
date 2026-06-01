@@ -1,0 +1,452 @@
+[
+  {
+    "id": "clar-001",
+    "topicId": "clarify",
+    "en": "Sorry, could you say that again?",
+    "vi": "Xin lỗi, anh/chị nói lại được không?",
+    "highlights": ["could you say that again"],
+    "note": "Câu cơ bản nhất khi nghe không kịp. Luôn mở đầu bằng 'Sorry' cho lịch sự.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-002",
+    "topicId": "clarify",
+    "en": "Sorry, I didn't catch that.",
+    "vi": "Xin lỗi, tôi nghe không kịp.",
+    "highlights": ["didn't catch that"],
+    "note": "'catch' = nghe rõ/bắt được. 'I didn't catch that' = tôi không nghe kịp — rất bản ngữ, dùng suốt.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-003",
+    "topicId": "clarify",
+    "en": "Could you slow down a little?",
+    "vi": "Anh/chị nói chậm lại chút được không?",
+    "highlights": ["slow down a little"],
+    "note": "Nhờ người ta nói chậm lại — hợp với em vì em cần thời gian để nghe và nghĩ.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-004",
+    "topicId": "clarify",
+    "en": "Sorry, you're breaking up.",
+    "vi": "Xin lỗi, tín hiệu của anh/chị bị chập chờn.",
+    "highlights": ["breaking up"],
+    "note": "'breaking up' = (tín hiệu) chập chờn, nghe lúc được lúc mất — họp online rất hay dùng.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-005",
+    "topicId": "clarify",
+    "en": "Do you mean the login page or the home page?",
+    "vi": "Ý anh/chị là trang đăng nhập hay trang chủ?",
+    "highlights": ["Do you mean"],
+    "note": "'Do you mean...?' = ý anh là...? — xác nhận lại khi không chắc mình hiểu đúng.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-006",
+    "topicId": "clarify",
+    "en": "Let me make sure I understand — you want me to retest everything?",
+    "vi": "Để tôi chắc là mình hiểu đúng — anh muốn tôi test lại hết đúng không?",
+    "highlights": ["make sure I understand"],
+    "note": "Vừa câu giờ vừa xác nhận: nhắc lại ý họ để chắc mình hiểu đúng, đồng thời có thêm vài giây.",
+    "tags": ["xác nhận", "câu giờ"]
+  },
+  {
+    "id": "clar-007",
+    "topicId": "clarify",
+    "en": "Could you type it in the chat?",
+    "vi": "Anh/chị gõ vào khung chat giúp được không?",
+    "highlights": ["type it in the chat"],
+    "note": "Mẹo vàng khi nghe không kịp trong họp online — nhờ họ gõ ra chat để mình đọc cho chắc.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-008",
+    "topicId": "clarify",
+    "en": "Sorry, what was that again?",
+    "vi": "Xin lỗi, cái đó là gì nhỉ?",
+    "highlights": ["what was that again"],
+    "note": "Cách hỏi lại ngắn gọn, thân mật hơn — hợp khi nói với đồng nghiệp thân.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-009",
+    "topicId": "clarify",
+    "en": "Could you give me an example?",
+    "vi": "Anh/chị cho tôi một ví dụ được không?",
+    "highlights": ["give me an example"],
+    "note": "Khi hiểu lờ mờ — xin một ví dụ để rõ hơn, đồng thời câu thêm thời gian.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-010",
+    "topicId": "clarify",
+    "en": "I think I missed the last part.",
+    "vi": "Hình như tôi lỡ mất đoạn cuối rồi.",
+    "highlights": ["missed the last part"],
+    "note": "'miss' = bỏ lỡ/nghe sót. Thừa nhận nhẹ nhàng rằng mình nghe sót một đoạn.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-011",
+    "topicId": "clarify",
+    "en": "Could you repeat that, please?",
+    "vi": "Bạn nhắc lại được không ạ?",
+    "highlights": ["repeat that"],
+    "note": "'repeat' = lặp lại. Cách hỏi lại trang trọng, lịch sự.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-012",
+    "topicId": "clarify",
+    "en": "I'm sorry, I didn't quite get that.",
+    "vi": "Xin lỗi, tôi chưa hiểu rõ lắm.",
+    "highlights": ["didn't quite get that"],
+    "note": "'didn't quite get that' = chưa hiểu/nghe rõ lắm — nhẹ nhàng hơn 'I don't understand'.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-013",
+    "topicId": "clarify",
+    "en": "Could you speak up a bit?",
+    "vi": "Bạn nói to hơn chút được không?",
+    "highlights": ["speak up"],
+    "note": "'speak up' = nói to hơn. Dùng khi nghe quá nhỏ.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-014",
+    "topicId": "clarify",
+    "en": "You're a little quiet, could you speak louder?",
+    "vi": "Bạn hơi nhỏ tiếng, nói lớn hơn được không?",
+    "highlights": ["speak louder"],
+    "note": "'speak louder' = nói lớn hơn. 'quiet' ở đây = nhỏ tiếng.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-015",
+    "topicId": "clarify",
+    "en": "Sorry, there's a lot of background noise.",
+    "vi": "Xin lỗi, ồn quá nên tôi nghe không rõ.",
+    "highlights": ["background noise"],
+    "note": "'background noise' = tiếng ồn xung quanh. Giải thích lý do nghe không rõ.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-016",
+    "topicId": "clarify",
+    "en": "Could you spell that for me?",
+    "vi": "Bạn đánh vần giúp tôi được không?",
+    "highlights": ["spell that"],
+    "note": "'spell' = đánh vần. Cực hữu ích khi nghe tên/từ lạ.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-017",
+    "topicId": "clarify",
+    "en": "How do you spell it?",
+    "vi": "Từ đó đánh vần thế nào?",
+    "highlights": ["How do you spell"],
+    "note": "Hỏi cách viết một từ mình nghe được nhưng không chắc.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-018",
+    "topicId": "clarify",
+    "en": "What does that mean?",
+    "vi": "Cái đó nghĩa là gì?",
+    "highlights": ["What does that mean"],
+    "note": "Hỏi nghĩa của một từ/cụm mình chưa hiểu.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-019",
+    "topicId": "clarify",
+    "en": "What do you mean by that?",
+    "vi": "Ý bạn là sao?",
+    "highlights": ["What do you mean by"],
+    "note": "Hỏi cho rõ ý người nói muốn truyền đạt.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-020",
+    "topicId": "clarify",
+    "en": "Sorry, I'm not following.",
+    "vi": "Xin lỗi, tôi không theo kịp.",
+    "highlights": ["not following"],
+    "note": "'I'm not following' = tôi không theo kịp/không hiểu mạch ý.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-021",
+    "topicId": "clarify",
+    "en": "Could you explain that again?",
+    "vi": "Bạn giải thích lại được không?",
+    "highlights": ["explain that again"],
+    "note": "Nhờ giải thích lại khi chưa nắm được ý.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-022",
+    "topicId": "clarify",
+    "en": "Could you put it in simpler words?",
+    "vi": "Bạn nói đơn giản hơn được không?",
+    "highlights": ["simpler words"],
+    "note": "Nhờ diễn đạt dễ hiểu hơn khi câu gốc quá phức tạp.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-023",
+    "topicId": "clarify",
+    "en": "So you're saying we should wait?",
+    "vi": "Vậy ý bạn là mình nên đợi?",
+    "highlights": ["So you're saying"],
+    "note": "'So you're saying...?' = vậy ý bạn là...? — nhắc lại để xác nhận đã hiểu đúng.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-024",
+    "topicId": "clarify",
+    "en": "Let me repeat that back to you.",
+    "vi": "Để tôi nhắc lại cho bạn nghe nhé.",
+    "highlights": ["repeat that back"],
+    "note": "'repeat back' = nhắc lại điều vừa nghe để kiểm chứng mình hiểu đúng.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-025",
+    "topicId": "clarify",
+    "en": "Just to make sure I got it right, you mean today?",
+    "vi": "Cho chắc là tôi hiểu đúng nhé, ý bạn là hôm nay?",
+    "highlights": ["I got it right"],
+    "note": "'make sure I got it right' = chắc rằng tôi hiểu đúng — xác nhận lại lịch sự.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-026",
+    "topicId": "clarify",
+    "en": "Did you say Friday or Thursday?",
+    "vi": "Bạn nói thứ Sáu hay thứ Năm?",
+    "highlights": ["Did you say"],
+    "note": "Hỏi lại để phân biệt hai thứ nghe gần giống nhau.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-027",
+    "topicId": "clarify",
+    "en": "Sorry, I missed your last point.",
+    "vi": "Xin lỗi, tôi lỡ mất ý cuối của bạn.",
+    "highlights": ["missed your last point"],
+    "note": "'miss a point' = bỏ lỡ một ý. Thừa nhận nghe sót lịch sự.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-028",
+    "topicId": "clarify",
+    "en": "Could you give me a second to process that?",
+    "vi": "Cho tôi vài giây để hiểu cái đó nhé?",
+    "highlights": ["process that"],
+    "note": "'process' = xử lý/tiêu hóa thông tin. Câu giờ lịch sự khi cần ngẫm.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "clar-029",
+    "topicId": "clarify",
+    "en": "Sorry, could you bear with me? My English is still improving.",
+    "vi": "Xin lỗi, bạn thông cảm chút nhé? Tiếng Anh tôi còn đang cải thiện.",
+    "highlights": ["bear with me"],
+    "note": "'bear with me' = thông cảm/kiên nhẫn với tôi chút. Câu cứu nguy rất hữu ích.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-030",
+    "topicId": "clarify",
+    "en": "Could you send me that in writing?",
+    "vi": "Bạn gửi cái đó bằng văn bản cho tôi được không?",
+    "highlights": ["in writing"],
+    "note": "'in writing' = bằng chữ/văn bản. Nhờ gửi text khi nghe không chắc.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-031",
+    "topicId": "clarify",
+    "en": "I can't hear you very well.",
+    "vi": "Tôi nghe bạn không rõ lắm.",
+    "highlights": ["can't hear you"],
+    "note": "Báo thẳng là đang nghe không rõ — thường gặp khi gọi online.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-032",
+    "topicId": "clarify",
+    "en": "The audio keeps cutting out.",
+    "vi": "Âm thanh cứ bị ngắt quãng.",
+    "highlights": ["cutting out"],
+    "note": "'cut out' = (âm thanh) bị ngắt/mất tiếng từng đoạn.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-033",
+    "topicId": "clarify",
+    "en": "Could you come closer to the mic?",
+    "vi": "Bạn lại gần micro hơn được không?",
+    "highlights": ["closer to the mic"],
+    "note": "Nhờ nói gần mic hơn cho rõ tiếng. 'mic' = micro.",
+    "tags": ["họp online"]
+  },
+  {
+    "id": "clar-034",
+    "topicId": "clarify",
+    "en": "Sorry, could you rephrase that?",
+    "vi": "Xin lỗi, bạn nói lại cách khác được không?",
+    "highlights": ["rephrase that"],
+    "note": "'rephrase' = diễn đạt lại bằng từ khác. Hữu ích khi câu gốc khó hiểu.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-035",
+    "topicId": "clarify",
+    "en": "I didn't catch the last word.",
+    "vi": "Tôi không nghe ra từ cuối.",
+    "highlights": ["the last word"],
+    "note": "Cụ thể hóa chỗ nghe sót — chỉ thiếu từ cuối thôi.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-036",
+    "topicId": "clarify",
+    "en": "Are you saying it's done?",
+    "vi": "Ý bạn là nó xong rồi à?",
+    "highlights": ["Are you saying"],
+    "note": "Xác nhận lại nội dung mình nghĩ mình vừa nghe.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-037",
+    "topicId": "clarify",
+    "en": "What was the name again?",
+    "vi": "Tên đó là gì ấy nhỉ?",
+    "highlights": ["the name again"],
+    "note": "Hỏi lại một cái tên vừa nghe nhưng không nhớ/nghe rõ.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-038",
+    "topicId": "clarify",
+    "en": "Sorry, I zoned out for a second.",
+    "vi": "Xin lỗi, tôi lơ đãng mất một lúc.",
+    "highlights": ["zoned out"],
+    "note": "'zone out' = lơ đãng, mất tập trung một chốc. Thừa nhận thật thà, thân mật.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-039",
+    "topicId": "clarify",
+    "en": "Could you give me a bit more context?",
+    "vi": "Bạn cho tôi thêm chút bối cảnh được không?",
+    "highlights": ["more context"],
+    "note": "'context' = bối cảnh/ngữ cảnh. Xin thêm thông tin để hiểu đúng.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-040",
+    "topicId": "clarify",
+    "en": "I think we're talking about different things.",
+    "vi": "Hình như mình đang nói về hai chuyện khác nhau.",
+    "highlights": ["different things"],
+    "note": "Nhận ra hai bên hiểu lệch nhau — gỡ hiểu nhầm.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-041",
+    "topicId": "clarify",
+    "en": "Let me check if I understood correctly.",
+    "vi": "Để tôi kiểm tra xem mình hiểu đúng chưa.",
+    "highlights": ["understood correctly"],
+    "note": "Dẫn vào việc nhắc lại để xác nhận cách hiểu của mình.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-042",
+    "topicId": "clarify",
+    "en": "Sorry, could you hold on a sec?",
+    "vi": "Xin lỗi, chờ tôi một giây nhé?",
+    "highlights": ["hold on a sec"],
+    "note": "'hold on a sec' = chờ một giây. Câu giờ khi cần dừng lại chút.",
+    "tags": ["câu giờ"]
+  },
+  {
+    "id": "clar-043",
+    "topicId": "clarify",
+    "en": "Can you go over that one more time?",
+    "vi": "Bạn nói lại cái đó một lần nữa được không?",
+    "highlights": ["go over that"],
+    "note": "'go over' = đi qua/giải thích lại. Nhờ trình bày lại lần nữa.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-044",
+    "topicId": "clarify",
+    "en": "Sorry, which one are you referring to?",
+    "vi": "Xin lỗi, bạn đang nói tới cái nào?",
+    "highlights": ["referring to"],
+    "note": "'refer to' = nhắc/ám chỉ tới. Hỏi rõ đối tượng đang được nói.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-045",
+    "topicId": "clarify",
+    "en": "I think I misheard you.",
+    "vi": "Hình như tôi nghe nhầm rồi.",
+    "highlights": ["misheard"],
+    "note": "'mishear' = nghe nhầm. Thừa nhận có thể mình nghe sai.",
+    "tags": ["nghe lại"]
+  },
+  {
+    "id": "clar-046",
+    "topicId": "clarify",
+    "en": "Just double-checking — you mean today, right?",
+    "vi": "Kiểm tra lại cho chắc — ý bạn là hôm nay đúng không?",
+    "highlights": ["double-checking"],
+    "note": "'double-check' = kiểm tra lại lần nữa cho chắc.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-047",
+    "topicId": "clarify",
+    "en": "Sorry, you lost me there.",
+    "vi": "Xin lỗi, tới đó là tôi không theo kịp.",
+    "highlights": ["you lost me"],
+    "note": "'you lost me' = tôi không theo kịp ý bạn (từ chỗ đó). Thân mật và tự nhiên.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-048",
+    "topicId": "clarify",
+    "en": "Could you be more specific?",
+    "vi": "Bạn nói cụ thể hơn được không?",
+    "highlights": ["more specific"],
+    "note": "'specific' = cụ thể, rõ ràng. Xin chi tiết hơn khi câu nói còn chung chung.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-049",
+    "topicId": "clarify",
+    "en": "Let me know if I'm understanding this right.",
+    "vi": "Cho tôi biết tôi hiểu vậy đúng không nhé.",
+    "highlights": ["understanding this right"],
+    "note": "Mời người nói xác nhận lại cách hiểu của mình.",
+    "tags": ["xác nhận"]
+  },
+  {
+    "id": "clar-050",
+    "topicId": "clarify",
+    "en": "Thanks for clarifying.",
+    "vi": "Cảm ơn bạn đã nói rõ.",
+    "highlights": ["Thanks for clarifying"],
+    "note": "'clarify' = làm rõ. Cảm ơn sau khi được giải thích cho dễ hiểu.",
+    "tags": ["xác nhận"]
+  }
+]
